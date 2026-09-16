@@ -78,19 +78,28 @@ async def health_check():
 
 
 # Ensure static directories exist
-STATIC_DIR.mkdir(parents=True, exist_ok=True)
-css_dir = STATIC_DIR / "css"
-css_dir.mkdir(parents=True, exist_ok=True)
-js_dir = STATIC_DIR / "js"
-js_dir.mkdir(parents=True, exist_ok=True)
-images_dir = STATIC_DIR / "images"
-images_dir.mkdir(parents=True, exist_ok=True)
+try:
+    STATIC_DIR.mkdir(parents=True, exist_ok=True)
+    css_dir = STATIC_DIR / "css"
+    css_dir.mkdir(parents=True, exist_ok=True)
+    js_dir = STATIC_DIR / "js"
+    js_dir.mkdir(parents=True, exist_ok=True)
+    images_dir = STATIC_DIR / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+except OSError:
+    css_dir = STATIC_DIR / "css"
+    js_dir = STATIC_DIR / "js"
+    images_dir = STATIC_DIR / "images"
 
 # Mount subdirectories for direct root referencing (/css/*, /js/*, /images/*)
-app.mount("/css", StaticFiles(directory=str(css_dir)), name="css")
-app.mount("/js", StaticFiles(directory=str(js_dir)), name="js")
-app.mount("/images", StaticFiles(directory=str(images_dir)), name="images")
-app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+if css_dir.exists():
+    app.mount("/css", StaticFiles(directory=str(css_dir)), name="css")
+if js_dir.exists():
+    app.mount("/js", StaticFiles(directory=str(js_dir)), name="js")
+if images_dir.exists():
+    app.mount("/images", StaticFiles(directory=str(images_dir)), name="images")
+if STATIC_DIR.exists():
+    app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
 
 @app.get("/", include_in_schema=False)
@@ -174,11 +183,13 @@ async def download_full_bundle():
     return JSONResponse({"error": "Full bundle ZIP not found"}, status_code=404)
 
 
-# Mount images directory for direct URL access (/images/png/*, /images/jpg/*)
+# Mount extra images subdirectories if present without shadowing /images
 from backend.config import BASE_DIR
-images_dir = BASE_DIR / "images"
-if images_dir.exists():
-    app.mount("/images", StaticFiles(directory=str(images_dir)), name="images")
+extra_images_dir = BASE_DIR / "images"
+if extra_images_dir.exists() and (extra_images_dir / "png").exists():
+    app.mount("/images/png", StaticFiles(directory=str(extra_images_dir / "png")), name="images_png")
+if extra_images_dir.exists() and (extra_images_dir / "jpg").exists():
+    app.mount("/images/jpg", StaticFiles(directory=str(extra_images_dir / "jpg")), name="images_jpg")
 
 
 

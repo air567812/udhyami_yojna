@@ -1,0 +1,14 @@
+tests/
+pytest.ini
+generate_all_images.py
+generate_pptx.py
+run.bat
+start.ps1
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+*.zip
+*.pptx

@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/css/:path*",
+      "destination": "/static/css/:path*"
+    },
+    {
+      "source": "/js/:path*",
+      "destination": "/static/js/:path*"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/static/images/:path*"
+    },
+    {
+      "source": "/static/:path*",
+      "destination": "/static/:path*"
+    },
+    {
+      "source": "/presentation",
+      "destination": "/static/sih_presentation.html"
+    },
+    {
+      "source": "/",
+      "destination": "/static/index.html"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/docs",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/redoc",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/openapi.json",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/api/index.py"
+    }
+  ]
+}
