@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="60" height="60" rx="12" fill="#15803D"/>
+    <!-- Spinning wheel / Charkha silhouette -->
+    <circle cx="30" cy="30" r="18" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="30" cy="30" r="4" fill="#FFFFFF"/>
+    <line x1="30" y1="12" x2="30" y2="48" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="12" y1="30" x2="48" y2="30" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="17" y1="17" x2="43" y2="43" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="43" y1="17" x2="17" y2="43" stroke="#FFFFFF" stroke-width="1.5"/>
+  </g>
+  <text x="80" y="30" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="22" fill="#15803D">PMEGP • KVIC</text>
+  <text x="80" y="48" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="12" fill="#B43403">प्रधानमंत्री रोजगार सृजन कार्यक्रम</text>
+  <text x="80" y="64" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="10" fill="#4B5563">Credit-Linked Capital Subsidies</text>
+</svg>

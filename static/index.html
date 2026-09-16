@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Udhyami Yojna - Government Scheme Discovery Platform for Marginalized Indian Entrepreneurs. Find and apply for central and state subsidies, credit guarantees, and seed capital.">
+  <title>उद्यमी योजना | Udhyami Yojna - Government Scheme Discovery Platform</title>
+  
+  <!-- NIC Theme & Components CSS -->
+  <link rel="stylesheet" href="/css/nic-theme.css">
+  <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+  <!-- GIGW 3.0 Standard Accessibility Toolbar -->
+  <div class="gigw-utility-bar" role="region" aria-label="Accessibility and Language Settings">
+    <div class="gigw-utility-container">
+      <div class="gigw-left">
+        <a href="#main-content" class="skip-link">Skip to main content / मुख्य सामग्री पर जाएं</a>
+        <span class="gigw-badge" style="display: inline-flex; align-items: center; gap: 6px;">
+          <img src="/images/npi/flag_icon.svg" alt="Tiranga Flag of India" class="flag-brand-icon">
+          <span>भारत सरकार | Government of India</span>
+        </span>
+        <span class="gigw-badge">GIGW 3.0 Compliant</span>
+      </div>
+      <div class="gigw-right">
+        <span style="font-size: 11px; color: #94A3B8;">Font Size:</span>
+        <div class="a11y-controls-group" role="group" aria-label="Text Size Controls">
+          <button type="button" class="a11y-btn" id="btn-font-sm" aria-label="Decrease Font Size">A-</button>
+          <button type="button" class="a11y-btn active" id="btn-font-md" aria-label="Normal Font Size">A</button>
+          <button type="button" class="a11y-btn" id="btn-font-lg" aria-label="Increase Font Size">A+</button>
+        </div>
+        <button type="button" class="a11y-btn" id="btn-toggle-contrast" aria-label="Toggle High Contrast Mode">
+          <span>🌓 High Contrast</span>
+        </button>
+        <button type="button" class="a11y-btn" id="btn-open-qr" aria-label="Scan QR for Mobile Access" style="background:#1E293B; color:#93C5FD; border-color:#3B82F6;">
+          <span>📱 Mobile QR</span>
+        </button>
+        <span class="gigw-badge">
+          <span>♿ Screen Reader Friendly</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Tricolor Ribbon -->
+  <div class="tricolor-stripe" aria-hidden="true"></div>
+
+  <!-- Government Identity Top Bar -->
+  <div class="govt-top-bar" role="banner">
+    <div class="gov-identity">
+      <img src="/images/npi/flag_icon.svg" alt="Flag" style="width: 18px; height: 12px;">
+      <span>भारत सरकार</span>
+      <span aria-hidden="true">|</span>
+      <span>Government of India</span>
+      <span aria-hidden="true">|</span>
+      <span style="font-weight: normal;">Ministry of MSME & National Informatics Centre</span>
+    </div>
+    <div class="gov-tools">
+      <a href="tel:18001806763" class="helpline-badge" aria-label="MSME National Toll-Free Helpline: 1800 180 6763">
+        📞 MSME Helpline: 1800-180-6763
+      </a>
+      <span style="font-size: 12px; color: #546E7A;">Digital India Public Infrastructure</span>
+    </div>
+  </div>
+
+  <!-- Portal Header (National Portal of India - india.gov.in Authentic Style) -->
+  <header class="portal-header">
+    <div class="header-container">
+      <div class="brand-section">
+        <div class="emblem-placeholder" aria-label="National Emblem of India">
+          <!-- State Emblem of India (Lion Capital of Ashoka) -->
+          <img src="/images/logos/emblem_india.svg" alt="State Emblem of India" class="emblem-img" onerror="this.src='/images/npi/flag_icon.svg'">
+        </div>
+
+        <!-- Official National Portal of India (india.gov.in) Logo -->
+        <div style="border-right: 1px solid #CBD5E1; padding-right: 14px; margin-right: 4px;">
+          <img src="/images/npi/npi_logo.svg" alt="National Portal of India Logo" class="npi-brand-logo">
+        </div>
+
+        <div class="brand-hierarchy">
+          <span class="brand-goi">भारत सरकार | GOVERNMENT OF INDIA</span>
+          <span class="brand-ministry">सूक्ष्म, लघु एवं मध्यम उद्यम मंत्रालय | Ministry of Micro, Small & Medium Enterprises</span>
+          <div class="brand-text">
+            <h1>
+              <span class="hindi-title">उद्यमी योजना</span>
+              <span class="english-title">Udhyami Yojna</span>
+            </h1>
+            <p class="brand-subtitle">
+              National Scheme Discovery & AI Advisory Platform for Marginalized Entrepreneurs
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Universal Search Bar (india.gov.in style) -->
+      <div class="header-search-wrapper" role="search" aria-label="Portal Global Search">
+        <input 
+          type="text" 
+          id="global-search-input" 
+          class="header-search-input" 
+          placeholder="Search schemes, subsidies, loans (योजना या ऋण खोजें)..." 
+          aria-label="Universal Search Schemes"
+        >
+        <select id="global-search-category" class="header-category-select" aria-label="Search Filter by Category">
+          <option value="">All Schemes (सभी)</option>
+          <option value="Manufacturing">Manufacturing</option>
+          <option value="Food Processing">Food & Dairy</option>
+          <option value="Handicraft/Handloom">Handicrafts</option>
+          <option value="Women">Women-Led</option>
+          <option value="SC">SC/ST</option>
+          <option value="Trading">Retail / Vendor</option>
+          <option value="State">State Specific</option>
+        </select>
+        <button type="button" id="btn-global-search" class="header-search-btn" aria-label="Execute Search">
+          <span>🔍</span>
+          <span>Search</span>
+        </button>
+      </div>
+
+      <div class="header-right">
+        <!-- Official National Logos (No watermarks, clean GoI vectors) -->
+        <div class="portal-brand-logos">
+          <img src="/images/logos/msme_logo.svg" alt="Ministry of MSME" class="msme-header-logo" title="Ministry of Micro, Small & Medium Enterprises">
+          <img src="/images/logos/make_in_india.svg" alt="Make in India" class="make-in-india-logo" title="Make in India Initiative">
+          <img src="/images/logos/digital_india.svg" alt="Digital India" class="digital-india-logo" title="Digital India Power to Empower">
+          <img src="/images/npi/nic_logo.png" alt="NIC Logo" class="nic-brand-logo" title="National Informatics Centre">
+        </div>
+
+        <div class="status-pill" id="system-status-pill" style="background:#E2E8F0; color:#0F172A; border:1px solid #CBD5E1; padding:6px 14px; border-radius:18px; font-size:12px; font-weight:700; display:inline-flex; align-items:center; gap:6px;">
+          <span class="status-indicator" id="system-status-indicator"></span>
+          <span>National Portal Live</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Live National News & MSME Gazette Ticker (india.gov.in Official Media Pattern) -->
+  <div class="npi-news-ticker-bar" role="region" aria-label="Official National MSME News and Notifications">
+    <div class="ticker-label-badge">
+      <span>🔔 Gazette Live</span>
+    </div>
+    <div class="ticker-media-logos">
+      <img src="/images/npi/pib_logo.png" alt="PIB Logo" class="ticker-media-logo" title="Press Information Bureau">
+      <img src="/images/npi/dd_logo.png" alt="DD News Logo" class="ticker-media-logo" title="Doordarshan News">
+      <img src="/images/npi/air_logo.png" alt="All India Radio Logo" class="ticker-media-logo" title="News on Air">
+    </div>
+    <div class="ticker-marquee-wrapper">
+      <div class="ticker-marquee-content">
+        <span class="ticker-item"><strong>PIB MSME:</strong> Cabinet approves enhanced CGTMSE credit guarantee coverage up to ₹5 Crore for manufacturing enterprises without collateral.</span>
+        <span class="ticker-item"><strong>DD News:</strong> Over 1.35 Crore artisans successfully verified under PM Vishwakarma digital portal across all states.</span>
+        <span class="ticker-item"><strong>AIR News:</strong> Special 35% capital subsidy disbursed for women entrepreneurs under rural agro-processing cluster scheme.</span>
+        <span class="ticker-item"><strong>myScheme Portal:</strong> Unified Single-Window loan disbursement integrated across 28 states via JanSamarth & DIC single-window.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portal Navigation Tabs (india.gov.in Official Navy Header) -->
+  <nav class="portal-nav" aria-label="Primary Navigation">
+    <div class="nav-container" role="tablist">
+      <button class="nav-tab active" role="tab" id="tab-btn-finder" aria-selected="true" aria-controls="pane-finder" data-tab="pane-finder">
+        <span>🔍</span>
+        <span class="tab-hindi">योजना खोज</span>
+        <span>Scheme Finder</span>
+      </button>
+
+      <button class="nav-tab" role="tab" id="tab-btn-states" aria-selected="false" aria-controls="pane-states" data-tab="pane-states">
+        <span>🏛️</span>
+        <span class="tab-hindi">राज्य हब</span>
+        <span>State Discovery Hub</span>
+        <span class="tab-badge">28 States / UTs</span>
+      </button>
+
+      <button class="nav-tab" role="tab" id="tab-btn-catalog" aria-selected="false" aria-controls="pane-catalog" data-tab="pane-catalog">
+        <span>📜</span>
+        <span class="tab-hindi">सभी योजनाएं</span>
+        <span>Browse All Schemes</span>
+      </button>
+
+      <button class="nav-tab" role="tab" id="tab-btn-sitemap" aria-selected="false" aria-controls="pane-sitemap" data-tab="pane-sitemap">
+        <span>🗺️</span>
+        <span class="tab-hindi">विस्तृत साइटमैप</span>
+        <span>Detailed Sitemap</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- National Portal Breadcrumbs Bar -->
+  <div class="portal-breadcrumbs" aria-label="Breadcrumb Navigation">
+    <div class="breadcrumbs-container">
+      <a href="/">Home (होम)</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="#pane-finder" id="breadcrumb-section-link">Government Schemes & Subsidies</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current" id="breadcrumb-current-page">Citizen Scheme Finder (योजना खोज)</span>
+    </div>
+  </div>
+
+  <!-- Quick Focus Sectors Bar (india.gov.in category pills pattern) -->
+  <div class="npi-topics-bar" role="navigation" aria-label="Priority Enterprise Categories">
+    <div class="npi-topics-container">
+      <span class="npi-topics-label">🏛️ Focus Categories:</span>
+      <button type="button" class="npi-topic-pill active" data-topic="">All Categories (समस्त)</button>
+      <button type="button" class="npi-topic-pill" data-topic="Women">👩 Women Entrepreneurs</button>
+      <button type="button" class="npi-topic-pill" data-topic="SC">🛡️ SC/ST Welfare</button>
+      <button type="button" class="npi-topic-pill" data-topic="Manufacturing">⚙️ Manufacturing Units</button>
+      <button type="button" class="npi-topic-pill" data-topic="Food Processing">🥛 Food & Dairy</button>
+      <button type="button" class="npi-topic-pill" data-topic="Handicraft/Handloom">🧵 Handlooms & Artisans</button>
+      <button type="button" class="npi-topic-pill" data-topic="Divyangjan">♿ Divyangjan</button>
+      <button type="button" class="npi-topic-pill" data-topic="Trading">🛒 Micro-Vendors</button>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-wrapper" id="main-content">
+
+    <!-- ====================================================================
+         TAB 1: SCHEME FINDER (VOICE + MANUAL + RESULTS)
+         ==================================================================== -->
+    <div class="tab-pane active" id="pane-finder" role="tabpanel" aria-labelledby="tab-btn-finder">
+
+      <!-- INNOVATIVE FEATURE 1: INTERACTIVE SUBSIDY & BANK EMI SMART SIMULATOR -->
+      <section class="simulator-card" aria-labelledby="sim-title">
+        <div class="simulator-header">
+          <div class="simulator-title">
+            <h3 id="sim-title">
+              <span>🧮</span>
+              <span>स्मार्ट सब्सिडी एवं बैंक ऋण सिम्युलेटर | Smart Subsidy & EMI Simulator</span>
+            </h3>
+            <p class="simulator-subtitle">
+              Drag the project capital slider to simulate central & state subsidies, own margin contribution, and estimated bank EMI in real time.
+            </p>
+          </div>
+          <div class="simulator-badge">
+            <span>⚡ Instant Calculation</span>
+            <span>•</span>
+            <span>PMEGP / MUDRA / CGTMSE Rules</span>
+          </div>
+        </div>
+
+        <div class="simulator-body-grid">
+          <!-- Controls Column -->
+          <div class="simulator-controls">
+            <div class="sim-control-group">
+              <div class="sim-label-row">
+                <label for="sim-capital-slider" class="sim-label">Project Capital Needed (परियोजना लागत):</label>
+                <span class="sim-val-display" id="sim-capital-display">₹10,00,000</span>
+              </div>
+              <input 
+                type="range" 
+                id="sim-capital-slider" 
+                class="sim-range-input" 
+                min="50000" 
+                max="5000000" 
+                step="25000" 
+                value="1000000"
+                aria-label="Project Capital Slider"
+              >
+              <div style="display: flex; justify-content: space-between; font-size: 11px; color: #64748B; margin-top: 4px;">
+                <span>₹50k (Micro)</span>
+                <span>₹10 Lakh</span>
+                <span>₹25 Lakh</span>
+                <span>₹50 Lakh (Max PMEGP)</span>
+              </div>
+            </div>
+
+            <div class="sim-select-row">
+              <div>
+                <label for="sim-category-select" class="sim-label">Social Group:</label>
+                <select id="sim-category-select" class="form-select" style="padding: 6px 10px; font-size: 13px;">
+                  <option value="Special">SC / ST / Women / OBC (35% Max Subsidy)</option>
+                  <option value="General">General Category (25% Max Subsidy)</option>
+                </select>
+              </div>
+              <div>
+                <label for="sim-location-select" class="sim-label">Location (क्षेत्र):</label>
+                <select id="sim-location-select" class="form-select" style="padding: 6px 10px; font-size: 13px;">
+                  <option value="Rural">Rural (ग्रामीण - Higher Subsidy)</option>
+                  <option value="Urban">Urban (शहरी)</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px;">
+              <label for="sim-sector-select" class="sim-label">Enterprise Sector:</label>
+              <select id="sim-sector-select" class="form-select" style="padding: 6px 10px; font-size: 13px;">
+                <option value="Manufacturing">Manufacturing (विनिर्माण - Up to ₹50L)</option>
+                <option value="Food Processing">Food & Agro-Processing (खाद्य प्रसंस्करण)</option>
+                <option value="Service">Service Sector (सेवा क्षेत्र - Up to ₹20L)</option>
+                <option value="Handicraft/Handloom">Handicrafts & Artisans (हस्तशिल्प)</option>
+                <option value="Trading">Retail / Micro-Vending (खुदरा / वेंडर)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Real-Time Visual Metrics & Bar Breakdown -->
+          <div class="simulator-results">
+            <div class="sim-segmented-bar-container">
+              <div class="sim-segmented-bar-label">
+                <span>🟢 Govt Subsidy (<span id="sim-subsidy-pct">35%</span>)</span>
+                <span>🟡 Margin (<span id="sim-margin-pct">5%</span>)</span>
+                <span>🔵 Bank Loan (<span id="sim-loan-pct">60%</span>)</span>
+              </div>
+              <div class="sim-segmented-bar">
+                <div class="sim-seg-subsidy" id="sim-bar-subsidy" style="width: 35%;">Subsidy</div>
+                <div class="sim-seg-margin" id="sim-bar-margin" style="width: 5%;">Margin</div>
+                <div class="sim-seg-loan" id="sim-bar-loan" style="width: 60%;">Bank Loan</div>
+              </div>
+            </div>
+
+            <div class="sim-metrics-grid">
+              <div class="sim-metric-card highlight">
+                <div class="sim-metric-title">Govt Grant (अनुदान)</div>
+                <div class="sim-metric-val" id="sim-metric-subsidy">₹3,50,000</div>
+                <div class="sim-metric-sub">Non-repayable grant</div>
+              </div>
+              <div class="sim-metric-card">
+                <div class="sim-metric-title">Own Margin (स्वयं का अंश)</div>
+                <div class="sim-metric-val" id="sim-metric-margin">₹50,000</div>
+                <div class="sim-metric-sub">Promoter contribution</div>
+              </div>
+              <div class="sim-metric-card">
+                <div class="sim-metric-title">Bank Loan (बैंक ऋण)</div>
+                <div class="sim-metric-val" id="sim-metric-loan">₹6,00,000</div>
+                <div class="sim-metric-sub">CGTMSE Collateral-Free</div>
+              </div>
+            </div>
+
+            <div style="background: #F1F5F9; border: 1px solid #CBD5E1; border-radius: 6px; padding: 10px 14px; margin-top: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <span style="font-size: 12px; color: #475569; font-weight: 600;">Estimated Monthly EMI (मासिक बैंक किस्त):</span>
+                <div style="font-size: 16px; font-weight: 800; color: #0B3C5D;">
+                  <span id="sim-metric-emi">₹9,520</span>
+                  <span style="font-size: 11px; font-weight: normal; color: #64748B;">/ month (8.5% p.a., 7-yr tenure)</span>
+                </div>
+              </div>
+              <button type="button" id="btn-sim-apply" class="sim-apply-btn">
+                <span>🎯 Apply in Scheme Finder →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INNOVATIVE FEATURE 2: SPOTLIGHT SCHEMES SHOWCASE WITH AUTHENTIC BANNERS -->
+      <section class="spotlight-section" aria-labelledby="spotlight-heading">
+        <div class="spotlight-section-header">
+          <div class="spotlight-section-title" id="spotlight-heading">
+            <span>⭐</span>
+            <span>राष्ट्रीय प्रमुख योजनाएं | Spotlight National Flagship Schemes</span>
+          </div>
+          <span style="font-size: 12px; color: #64748B;">Official Banners & Portals from india.gov.in</span>
+        </div>
+
+        <div class="spotlight-grid">
+          <!-- ODOP Card -->
+          <div class="spotlight-card">
+            <div class="spotlight-img-box">
+              <img src="/images/npi/odop_banner.png" alt="One District One Product" class="spotlight-img">
+              <span class="spotlight-badge">Ministry of Commerce</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="spotlight-title">One District One Product (ODOP)</div>
+              <div class="spotlight-desc">Promoting indigenous crafts, handloom, and specialized agrarian products with capital and branding grants across 750+ districts.</div>
+              <div class="spotlight-footer">
+                <span class="spotlight-subsidy-tag">Up to 35% Capital Grant</span>
+                <button type="button" class="spotlight-btn" data-preset="handicraft">Match Scheme</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PM SVANidhi Card -->
+          <div class="spotlight-card">
+            <div class="spotlight-img-box">
+              <img src="/images/npi/pmsvanidhi_banner.png" alt="PM SVANidhi" class="spotlight-img">
+              <span class="spotlight-badge">Ministry of Housing & Urban</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="spotlight-title">PM SVANidhi Micro-Credit</div>
+              <div class="spotlight-desc">Collateral-free working capital micro-loans (₹10k to ₹50k) with 7% interest subsidy and cashback for digital UPI transactions.</div>
+              <div class="spotlight-footer">
+                <span class="spotlight-subsidy-tag">7% Interest Subvention</span>
+                <button type="button" class="spotlight-btn" data-preset="retail">Match Scheme</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PM Vishwakarma Card -->
+          <div class="spotlight-card">
+            <div class="spotlight-img-box">
+              <img src="/images/npi/teracotta_artisan.jpg" alt="PM Vishwakarma Artisans" class="spotlight-img">
+              <span class="spotlight-badge">Ministry of MSME</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="spotlight-title">PM Vishwakarma Artisan Yojana</div>
+              <div class="spotlight-desc">End-to-end support for 18 traditional artisan trades: ₹15,000 toolkit grant, master training, and 5% subsidized collateral-free loans up to ₹3 Lakh.</div>
+              <div class="spotlight-footer">
+                <span class="spotlight-subsidy-tag">₹15k Toolkit + 5% Loan</span>
+                <button type="button" class="spotlight-btn" data-preset="handicraft">Match Scheme</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bharat Tex Handlooms Card -->
+          <div class="spotlight-card">
+            <div class="spotlight-img-box">
+              <img src="/images/npi/bharat_tex.png" alt="Bharat Tex Handloom & Weaving" class="spotlight-img">
+              <span class="spotlight-badge">Ministry of Textiles</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="spotlight-title">National Handloom & Bharat Tex</div>
+              <div class="spotlight-desc">Comprehensive support for textile weavers, yarn supply subsidies, loom modernization grants, and international export facilitation.</div>
+              <div class="spotlight-footer">
+                <span class="spotlight-subsidy-tag">90% Loom Modernization</span>
+                <button type="button" class="spotlight-btn" data-preset="manufacturing">Match Scheme</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Citizen Scheme Discovery Guided Workflow Bar (All visible sequentially on this single page) -->
+      <div class="scheme-workflow-guide" role="region" aria-label="Scheme Discovery Workflow" style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:8px; padding:12px 18px; margin-bottom:20px; display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap; gap:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+        <a href="#voice-section" class="workflow-step-pill" style="display:flex; align-items:center; gap:8px; text-decoration:none; color:#0B3C5D;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#0B3C5D; color:#FFF; font-weight:700; font-size:12px;">1</span>
+          <div>
+            <span style="display:block; font-size:13px; font-weight:700;">1. Speak / Quick Presets</span>
+            <span style="display:block; font-size:11px; color:#64748B;">बोलें या तुरंत चुनें</span>
+          </div>
+        </a>
+        <span style="color:#CBD5E1; font-weight:bold;">➔</span>
+        <a href="#profile-form-card" class="workflow-step-pill" style="display:flex; align-items:center; gap:8px; text-decoration:none; color:#0B3C5D;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#D84315; color:#FFF; font-weight:700; font-size:12px;">2</span>
+          <div>
+            <span style="display:block; font-size:13px; font-weight:700;">2. Real-Time Form Verification</span>
+            <span style="display:block; font-size:11px; color:#64748B;">सीधा विवरण सत्यापन</span>
+          </div>
+        </a>
+        <span style="color:#CBD5E1; font-weight:bold;">➔</span>
+        <a href="#results-card" class="workflow-step-pill" style="display:flex; align-items:center; gap:8px; text-decoration:none; color:#0B3C5D;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#166534; color:#FFF; font-weight:700; font-size:12px;">3</span>
+          <div>
+            <span style="display:block; font-size:13px; font-weight:700;">3. Matched Schemes & Grants</span>
+            <span style="display:block; font-size:11px; color:#64748B;">पात्र योजनाएं एवं अनुदान</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Step 1: Voice & Speech Autofill Section -->
+      <section class="gov-card" id="voice-section" aria-labelledby="voice-section-title">
+          <div class="gov-card-header">
+            <div>
+              <h2 class="gov-card-title" id="voice-section-title">
+                <span class="step-number" aria-hidden="true">1</span>
+                <span>Speak or Type Your Business Details (बोलें या लिखें)</span>
+              </h2>
+              <p class="gov-card-desc">
+                Speak naturally in any Indian language. Our AI will automatically extract your age, category, business idea, and capital needs.
+              </p>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector-wrapper">
+              <label for="voice-locale-select">🌐 भाषा (Language):</label>
+              <select id="voice-locale-select" aria-label="Select voice recognition language">
+                <!-- Populated dynamically via JS with 12 Indian locales -->
+              </select>
+            </div>
+          </div>
+
+          <div class="voice-recorder-card">
+            <!-- Browser Compatibility Notice -->
+            <div id="browser-notice-container"></div>
+
+            <!-- Mic Control -->
+            <div class="voice-controls-row">
+              <div class="mic-btn-container" id="mic-btn-container">
+                <div class="mic-pulse-ring" aria-hidden="true"></div>
+                <button type="button" class="mic-btn" id="mic-btn" aria-label="Toggle voice recording" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                    <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                  </svg>
+                  <span>बोलें / Speak</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="recording-status-text" id="mic-status-text" aria-live="polite">
+              Click microphone to speak / बोलने के लिए माइक दबाएं
+            </div>
+
+            <!-- Transcript Preview Area -->
+            <div class="transcript-preview-box">
+              <div class="transcript-header">
+                <span>Speech Transcript (आवाज़ का प्रतिलेख)</span>
+                <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">You can also click to edit directly</span>
+              </div>
+              <div
+                class="transcript-content"
+                id="transcript-box"
+                contenteditable="true"
+                role="textbox"
+                aria-multiline="true"
+                aria-label="Speech transcript or manual input text"
+                data-placeholder="Your spoken words will appear here in real time. Or type your details directly here (e.g. 'I am a 28 year old woman from Maharashtra, want 5 Lakhs for readymade garments business')..."
+              ></div>
+
+              <div class="transcript-actions">
+                <button type="button" class="btn btn-secondary btn-sm" id="btn-clear-transcript">
+                  Clear Text (साफ करें)
+                </button>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-extract-ai">
+                  <span>⚡ Auto-Fill Form with AI (एआई से भरें)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Sample Testing Prompts -->
+            <div class="sample-prompts">
+              <div class="sample-prompts-title">
+                💡 Quick Test Scenarios (त्वरित परीक्षण उदाहरण - क्लिक करके जांचें):
+              </div>
+              <div class="prompt-chips">
+                <button type="button" class="chip-btn" data-sample="मैं 28 साल की महिला हूँ, उत्तर प्रदेश से। सिलाई और रेडीमेड कपड़ों के व्यवसाय के लिए 5 लाख का लोन चाहिए।">
+                  👩 उत्तर प्रदेश - महिला सिलाई व्यवसाय (₹5 लाख)
+                </button>
+                <button type="button" class="chip-btn" data-sample="I am 32 years old, SC category from Maharashtra. Starting a new manufacturing fabrication unit, need 25 lakhs loan.">
+                  🏭 Maharashtra - SC Greenfield Unit (₹25 Lakh)
+                </button>
+                <button type="button" class="chip-btn" data-sample="I run a small street vegetable vending cart in Delhi, annual income 1.5 lakh, need 20,000 working capital.">
+                  🛒 Delhi - Street Vendor Micro-Credit (₹20,000)
+                </button>
+                <button type="button" class="chip-btn" data-sample="बिहार से हूँ, 24 वर्ष, ओबीसी। डेयरी और मखाना प्रोसेसिंग यूनिट के लिए 8 लाख का लोन चाहिए।">
+                  🥛 Bihar - OBC Food & Dairy Processing (₹8 लाख)
+                </button>
+              </div>
+            </div>
+
+            <!-- Sector Quick-Filter Chips for 1-Tap Preset Loading -->
+            <div class="sector-quick-chips">
+              <div class="sector-chips-title">
+                <span>⚡ त्वरित क्षेत्र चयन / Quick Sector Presets (1-Click Fill & Proceed):</span>
+              </div>
+              <div class="chips-grid">
+                <button type="button" class="sector-chip" data-sector="Manufacturing" data-cost="2500000" data-cat="SC" data-desc="Small fabrication & machinery parts manufacturing unit">
+                  ⚙️ विनिर्माण / Manufacturing (₹25L)
+                </button>
+                <button type="button" class="sector-chip" data-sector="Food Processing" data-cost="800000" data-cat="OBC" data-desc="Spices, bakery, and dairy agro processing unit">
+                  🥛 खाद्य प्रसंस्करण / Food & Dairy (₹8L)
+                </button>
+                <button type="button" class="sector-chip" data-sector="Handicraft/Handloom" data-cost="300000" data-gender="Female" data-desc="Traditional artisan weaving and handicrafts">
+                  🧵 हस्तशिल्प / Handicrafts (₹3L)
+                </button>
+                <button type="button" class="sector-chip" data-sector="Trading" data-cost="50000" data-desc="Local grocery, vegetable or street vending micro stall">
+                  🛒 खुदरा व्यापार / Retail Vendor (₹50k)
+                </button>
+                <button type="button" class="sector-chip" data-sector="Service" data-cost="500000" data-desc="Automobile repair, salon or digital service center">
+                  🔧 सेवा क्षेत्र / Service Center (₹5L)
+                </button>
+                <button type="button" class="sector-chip" data-sector="Agri-allied" data-cost="1000000" data-desc="Poultry farm, goat rearing, or fishery setup">
+                  🌾 कृषि संबद्ध / Agri-Allied (₹10L)
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Real-Time Form Sync Notice pointing directly to the form below on the same page -->
+          <div class="form-live-sync-indicator" style="display: flex; align-items: center; justify-content: space-between; background: #F0FDF4; border: 1px solid #86EFAC; border-radius: 8px; padding: 12px 18px; margin-top: 18px; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="pulse-dot"></span>
+              <div>
+                <strong style="color: #166534; font-size: 13px;">Real-Time Form Sync Active (सीधा विवरण सत्यापन):</strong>
+                <span style="color: #15803D; font-size: 12px; margin-left: 4px;">Spoken inputs and quick presets automatically populate the verification form directly below. Verify or edit any field before submitting.</span>
+              </div>
+            </div>
+            <a href="#profile-form-card" class="btn btn-primary btn-sm" id="btn-goto-step-2" style="text-decoration: none;">
+              <span>↓ Verify Details in Form Below (नीचे देखें)</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Step 2: Review & Edit Profile Form (Directly on Same Page Below Speak Option) -->
+        <section class="gov-card" id="profile-form-card" aria-labelledby="review-section-title" style="margin-top: 24px;">
+        <div class="gov-card-header">
+          <div>
+            <h2 class="gov-card-title" id="review-section-title">
+              <span class="step-number" aria-hidden="true">2</span>
+              <span>Review & Refine Profile (अपनी जानकारी की समीक्षा करें)</span>
+            </h2>
+            <p class="gov-card-desc">
+              Review the fields extracted from your voice or fill them manually. The rule engine uses these exact parameters to determine 100% accurate eligibility.
+            </p>
+          </div>
+        </div>
+
+        <form id="profile-form" novalidate>
+          <div class="form-row">
+            <!-- Age -->
+            <div class="form-group">
+              <label for="input-age" class="form-label">
+                उम्र / Age (Years) <span style="color: var(--danger);">*</span>
+              </label>
+              <input
+                type="number"
+                id="input-age"
+                name="age"
+                class="form-input"
+                min="14"
+                max="90"
+                placeholder="e.g. 28"
+                required
+              >
+              <span class="form-hint">Most schemes require age between 18 and 65 years.</span>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+              <label for="select-gender" class="form-label">
+                लिंग / Gender <span style="color: var(--danger);">*</span>
+              </label>
+              <select id="select-gender" name="gender" class="form-select" required>
+                <option value="">-- Select Gender --</option>
+                <option value="Female">महिला / Female (Special subsidies apply)</option>
+                <option value="Male">पुरुष / Male</option>
+                <option value="Other">अन्य / Other / Transgender</option>
+              </select>
+              <span class="form-hint">Women entrepreneurs receive up to 10-15% higher subsidy.</span>
+            </div>
+
+            <!-- Social Category -->
+            <div class="form-group">
+              <label for="select-category" class="form-label">
+                सामाजिक श्रेणी / Social Group <span style="color: var(--danger);">*</span>
+              </label>
+              <select id="select-category" name="social_category" class="form-select" required>
+                <option value="">-- Select Category --</option>
+                <option value="SC">अनुसूचित जाति / Scheduled Caste (SC)</option>
+                <option value="ST">अनुसूचित जनजाति / Scheduled Tribe (ST)</option>
+                <option value="OBC">अन्य पिछड़ा वर्ग / OBC</option>
+                <option value="Minority">अल्पसंख्यक / Minority Community</option>
+                <option value="Divyangjan">दिव्यांगजन / Differently-Abled (Divyangjan)</option>
+                <option value="General">सामान्य / General Category</option>
+                <option value="EBC">अत्यंत पिछड़ा वर्ग / EBC</option>
+              </select>
+              <span class="form-hint">SC/ST and special groups qualify for Stand-Up India and maximum PMEGP grants.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <!-- State -->
+            <div class="form-group">
+              <label for="select-state" class="form-label">
+                राज्य / State of Enterprise <span style="color: var(--danger);">*</span>
+              </label>
+              <select id="select-state" name="state" class="form-select" required>
+                <option value="">-- Select State --</option>
+                <option value="Maharashtra">Maharashtra (महाराष्ट्र)</option>
+                <option value="Uttar Pradesh">Uttar Pradesh (उत्तर प्रदेश)</option>
+                <option value="Tamil Nadu">Tamil Nadu (तमिलनाडु)</option>
+                <option value="Gujarat">Gujarat (गुजरात)</option>
+                <option value="Karnataka">Karnataka (कर्नाटक)</option>
+                <option value="Bihar">Bihar (बिहार)</option>
+                <option value="Rajasthan">Rajasthan (राजस्थान)</option>
+                <option value="West Bengal">West Bengal (पश्चिम बंगाल)</option>
+                <option value="Telangana">Telangana (तेलंगाना)</option>
+                <option value="Assam">Assam (असम)</option>
+                <option value="Odisha">Odisha (ओडिशा)</option>
+                <option value="Kerala">Kerala (केरल)</option>
+                <option value="Madhya Pradesh">Madhya Pradesh (मध्य प्रदेश)</option>
+                <option value="Punjab">Punjab (पंजाब)</option>
+                <option value="Andhra Pradesh">Andhra Pradesh (आंध्र प्रदेश)</option>
+                <option value="Delhi">Delhi NCT (दिल्ली)</option>
+                <option value="Haryana">Haryana (हरियाणा)</option>
+                <option value="Jharkhand">Jharkhand (झारखंड)</option>
+                <option value="Chhattisgarh">Chhattisgarh (छत्तीसगढ़)</option>
+                <option value="Uttarakhand">Uttarakhand (उत्तराखंड)</option>
+                <option value="Himachal Pradesh">Himachal Pradesh (हिमाचल प्रदेश)</option>
+                <option value="Goa">Goa (गोवा)</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir (जम्मू और कश्मीर)</option>
+                <option value="Tripura">Tripura (त्रिपुरा)</option>
+                <option value="Manipur">Manipur (मणिपुर)</option>
+                <option value="Meghalaya">Meghalaya (मेघालय)</option>
+                <option value="Nagaland">Nagaland (नागालैंड)</option>
+                <option value="Mizoram">Mizoram (मिजोरम)</option>
+                <option value="Sikkim">Sikkim (सिक्किम)</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh (अरुणाचल प्रदेश)</option>
+                <option value="Chandigarh">Chandigarh (चंडीगढ़)</option>
+                <option value="Puducherry">Puducherry (पुडुचेरी)</option>
+                <option value="All">All India / Central Only</option>
+              </select>
+              <span class="form-hint">Enables both Central and your State's exclusive initiatives.</span>
+            </div>
+
+            <!-- District -->
+            <div class="form-group">
+              <label for="input-district" class="form-label">
+                ज़िला / District Name
+              </label>
+              <input
+                type="text"
+                id="input-district"
+                name="district"
+                class="form-input"
+                placeholder="e.g. Pune, Varanasi, Madurai"
+              >
+            </div>
+
+            <!-- Urban / Rural -->
+            <div class="form-group">
+              <label for="select-urban-rural" class="form-label">
+                स्थान का प्रकार / Location Area
+              </label>
+              <select id="select-urban-rural" name="urban_rural" class="form-select">
+                <option value="Rural">ग्रामीण / Rural Area (Gets higher 25-35% subsidy)</option>
+                <option value="Urban">शहरी / Urban Area (Gets 15-25% subsidy)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <!-- Business Sector -->
+            <div class="form-group">
+              <label for="select-sector" class="form-label">
+                उद्योग क्षेत्र / Enterprise Sector <span style="color: var(--danger);">*</span>
+              </label>
+              <select id="select-sector" name="sector" class="form-select" required>
+                <option value="">-- Select Sector --</option>
+                <option value="Manufacturing">विनिर्माण / Manufacturing (Units, tools, plastics, fabrication)</option>
+                <option value="Food Processing">खाद्य प्रसंस्करण / Food Processing (Dairy, spices, bakery, agro-food)</option>
+                <option value="Handicraft/Handloom">हस्तशिल्प एवं हथकरघा / Handicraft & Handloom (Weaving, pottery, crafts)</option>
+                <option value="Service">सेवा क्षेत्र / Service Sector (Repairs, salon, logistics, clinics)</option>
+                <option value="Trading">व्यापार एवं खुदरा / Trading & Retail (Kirana, vendor, shop, wholesale)</option>
+                <option value="Agri-allied">कृषि संबद्ध / Agri-Allied (Poultry, goat farming, fishery)</option>
+                <option value="Tech/IT">तकनीक / Tech & IT (Software, digital services, electronics)</option>
+              </select>
+            </div>
+
+            <!-- Investment Needed -->
+            <div class="form-group">
+              <label for="input-investment" class="form-label">
+                आवश्यक ऋण राशि / Loan or Capital Needed (₹) <span style="color: var(--danger);">*</span>
+              </label>
+              <input
+                type="number"
+                id="input-investment"
+                name="investment_needed"
+                class="form-input"
+                min="5000"
+                step="5000"
+                placeholder="e.g. 500000 for 5 Lakhs"
+                required
+              >
+              <span class="form-hint">E.g., 50000 for Mudra Shishu, 500000 for Kishore, 2500000 for PMEGP.</span>
+            </div>
+
+            <!-- Existing or Greenfield Business -->
+            <div class="form-group">
+              <label for="select-existing" class="form-label">
+                व्यवसाय की स्थिति / Business Stage <span style="color: var(--danger);">*</span>
+              </label>
+              <select id="select-existing" name="existing_business" class="form-select">
+                <option value="false">नया व्यवसाय / New Enterprise (Greenfield)</option>
+                <option value="true">मौजूदा व्यवसाय का विस्तार / Expanding Existing Enterprise</option>
+              </select>
+              <span class="form-hint">PMEGP requires a new unit; Mudra allows both new & existing.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <!-- Education -->
+            <div class="form-group">
+              <label for="select-education" class="form-label">
+                शिक्षा स्तर / Education Level
+              </label>
+              <select id="select-education" name="education" class="form-select">
+                <option value="">-- Select Education --</option>
+                <option value="Below 8th">8वीं से कम / Below 8th Standard</option>
+                <option value="8th Pass">8वीं पास / 8th Pass</option>
+                <option value="10th Pass">10वीं पास / 10th Pass (Matriculation)</option>
+                <option value="12th Pass">12वीं पास / 12th Pass (Intermediate)</option>
+                <option value="Graduate / Diploma">स्नातक या डिप्लोमा / Graduate or Polytechnic Diploma</option>
+                <option value="Post Graduate">स्नातकोत्तर / Post Graduate</option>
+              </select>
+            </div>
+
+            <!-- Annual Income -->
+            <div class="form-group">
+              <label for="input-income" class="form-label">
+                वार्षिक पारिवारिक आय / Annual Family Income (₹)
+              </label>
+              <input
+                type="number"
+                id="input-income"
+                name="annual_income"
+                class="form-input"
+                placeholder="e.g. 250000"
+              >
+              <span class="form-hint">Leave blank if not applicable. Certain welfare schemes check income caps.</span>
+            </div>
+          </div>
+
+          <!-- Business Description -->
+          <div class="form-group">
+            <label for="textarea-idea" class="form-label">
+              व्यवसाय विवरण / Brief Description of Business Idea
+            </label>
+            <textarea
+              id="textarea-idea"
+              name="business_idea"
+              rows="2"
+              class="form-textarea"
+              placeholder="Describe your planned business (e.g., Setting up an automated spice grinding and packaging unit selling to local grocery stores)..."
+            ></textarea>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="wizard-nav-actions" style="justify-content: space-between;">
+            <a href="#voice-section" class="btn btn-secondary" style="text-decoration: none;">
+              <span>↑ Back to Voice / Presets (ऊपर जाएं)</span>
+            </a>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-secondary" id="btn-reset-form">
+                Reset Form (रीसेट)
+              </button>
+              <button type="submit" class="btn btn-primary" id="btn-submit-profile">
+                <span>🎯 Find Eligible Schemes (पात्र योजनाएं खोजें) ↓</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Step 3: Matched Schemes & Action Checklist (Directly on Same Page Below Form) -->
+      <section class="gov-card" id="results-card" aria-labelledby="results-heading" style="margin-top: 24px;">
+        <!-- Citizen Readiness Top Bar -->
+        <div class="readiness-actions-bar" style="border: none; padding: 0 0 16px 0; margin-bottom: 16px; border-bottom: 1px solid #E2E8F0;">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span class="gazette-verified-badge">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              <span>Gazette Verified / राजपत्र सत्यापित</span>
+            </span>
+            <span style="font-size: 13px; color: var(--text-muted);">
+              Deterministic 100-point scoring based on official Central & State Government gazette criteria.
+            </span>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="#profile-form-card" class="btn btn-secondary btn-sm" style="text-decoration: none;">
+              <span>↑ Modify Profile (विवरण बदलें)</span>
+            </a>
+            <button type="button" class="btn btn-primary btn-sm" id="btn-print-results">
+              <span>🖨️ Print / Save Checklist (प्रिंट करें)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Match Results Display Container -->
+        <div id="results-section">
+          <h2 id="results-heading" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; overflow: hidden;">
+            Matched Government Schemes Results
+          </h2>
+          <div id="scheme-results-container">
+            <!-- Initial Placeholder -->
+            <div class="gov-card" id="results-placeholder" style="border: 1px dashed #CBD5E1; box-shadow: none; background: #F8FAFC;">
+              <div style="text-align: center; padding: 32px 16px;">
+                <div style="font-size: 42px; margin-bottom: 12px;" aria-hidden="true">🏛️</div>
+                <h3 style="font-size: 20px; font-weight: 700; color: var(--chakra-navy);">
+                  Your Matched Schemes Will Appear Here
+                </h3>
+                <p style="color: var(--text-muted); max-width: 550px; margin: 8px auto 0; font-size: 15px;">
+                  Use the voice input in Step 1 or select a quick sector preset, verify your details in the form above, 
+                  and click "Find Eligible Schemes" to discover customized government subsidies and collateral-free bank loans.
+                </p>
+                <div style="margin-top: 20px;">
+                  <a href="#voice-section" class="btn btn-primary" id="btn-start-step-1" style="text-decoration: none;">
+                    <span>🎙️ Start with Voice or Presets (शुरू करें)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ====================================================================
+         TAB 2: STATE-WISE DISCOVERY HUB
+         ==================================================================== -->
+    <div class="tab-pane" id="pane-states" role="tabpanel" aria-labelledby="tab-btn-states">
+      <div class="explore-bharat-frame">
+        <img src="/images/npi/explore_left.png" alt="" class="explore-vector-left" aria-hidden="true">
+        <img src="/images/npi/explore_right.png" alt="" class="explore-vector-right" aria-hidden="true">
+        <div class="explore-content-inner">
+          <section class="gov-card" style="margin-bottom: 0; box-shadow: none; border: none;">
+            <div class="gov-card-header">
+              <div>
+                <h2 class="gov-card-title">
+                  <span>🏛️ State-Wise Entrepreneurial Ecosystem Hub (राज्य हब)</span>
+                </h2>
+                <p class="gov-card-desc">
+                  Explore regional industrial clusters, single-window clearance portals, District Industries Centres (DICs), 
+                  and exclusive state subsidy programs across India.
+                </p>
+              </div>
+
+              <div class="state-hub-filter-bar">
+                <label for="state-hub-select" style="font-weight: 700; font-size: 14px; color: var(--chakra-navy);">
+                  Select State / राज्य चुनें:
+                </label>
+                <select id="state-hub-select" class="form-select" style="min-width: 260px;">
+                  <!-- Populated dynamically via JS -->
+                </select>
+              </div>
+            </div>
+
+            <!-- Regional Cluster Quick Filter -->
+            <div style="margin-bottom: 18px;">
+              <span style="font-size: 13px; font-weight: 700; color: var(--chakra-navy); display: block; margin-bottom: 6px;">
+                Filter by Region (क्षेत्र अनुसार फ़िल्टर करें):
+              </span>
+              <div class="regional-filters-row" id="regional-filter-btns" role="group" aria-label="Regional Cluster Filters">
+                <button type="button" class="regional-filter-btn active" data-region="All">All India (समस्त भारत)</button>
+                <button type="button" class="regional-filter-btn" data-region="North">North (उत्तर)</button>
+                <button type="button" class="regional-filter-btn" data-region="South">South (दक्षिण)</button>
+                <button type="button" class="regional-filter-btn" data-region="West">West (पश्चिम)</button>
+                <button type="button" class="regional-filter-btn" data-region="East">East (पूर्व)</button>
+                <button type="button" class="regional-filter-btn" data-region="Central">Central (मध्य)</button>
+                <button type="button" class="regional-filter-btn" data-region="North-East">North-East (पूर्वोत्तर)</button>
+              </div>
+            </div>
+
+            <div id="state-hub-details">
+              <!-- Populated dynamically via state-hub.js -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         TAB 3: BROWSE ALL SCHEMES (CATALOG)
+         ==================================================================== -->
+    <div class="tab-pane" id="pane-catalog" role="tabpanel" aria-labelledby="tab-btn-catalog">
+      <section class="gov-card">
+        <div class="gov-card-header">
+          <div>
+            <h2 class="gov-card-title">
+              <span>📜 Central & State Scheme Catalog (संपूर्ण योजना सूची)</span>
+            </h2>
+            <p class="gov-card-desc">
+              Browse all seeded MSME, Startup, and welfare schemes with official guidelines and direct application portals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div style="display: flex; gap: 14px; margin-bottom: 20px; flex-wrap: wrap; align-items: center;">
+          <div style="flex: 1; min-width: 220px;">
+            <input
+              type="text"
+              id="catalog-search-input"
+              class="form-input"
+              placeholder="Search by scheme name, ministry, or keyword..."
+              aria-label="Search schemes"
+            >
+          </div>
+          <div style="min-width: 180px;">
+            <select id="catalog-sector-filter" class="form-select" aria-label="Filter by Sector">
+              <option value="">All Sectors (सभी क्षेत्र)</option>
+              <option value="Manufacturing">Manufacturing</option>
+              <option value="Food Processing">Food Processing</option>
+              <option value="Handicraft/Handloom">Handicraft & Handloom</option>
+              <option value="Service">Service Sector</option>
+              <option value="Trading">Trading & Retail</option>
+              <option value="Agri-allied">Agri-Allied</option>
+              <option value="Tech/IT">Tech & IT</option>
+            </select>
+          </div>
+          <div style="min-width: 180px;">
+            <select id="catalog-category-filter" class="form-select" aria-label="Filter by Category">
+              <option value="">All Social Groups</option>
+              <option value="Women">Women Entrepreneurs</option>
+              <option value="SC">SC / Dalit</option>
+              <option value="ST">ST / Tribal</option>
+              <option value="OBC">OBC</option>
+              <option value="Divyangjan">Divyangjan</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Scheme Cards Grid -->
+        <div id="catalog-schemes-container">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </section>
+    </div>
+
+    <!-- ====================================================================
+         TAB 4: DETAILED SITEMAP (विस्तृत साइटमैप)
+         ==================================================================== -->
+    <div class="tab-pane" id="pane-sitemap" role="tabpanel" aria-labelledby="tab-btn-sitemap">
+      <div class="sitemap-wrapper">
+        <div class="sitemap-header-banner">
+          <h2>
+            <span>🗺️</span>
+            <span>विस्तृत पोर्टल साइटमैप | Detailed National Portal Sitemap</span>
+          </h2>
+          <p>
+            Complete hierarchical navigation of all government financial inclusion schemes, state ecosystems, statutory policies, and digital citizen tools under Udhyami Yojna.
+          </p>
+        </div>
+
+        <div class="sitemap-grid">
+          <!-- Pillar 1 -->
+          <div class="sitemap-pillar-card">
+            <div class="sitemap-pillar-header">
+              <span>🏛️ Pillar 1: Core Financial Schemes</span>
+            </div>
+            <ul class="sitemap-list">
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-target="pmegp">PMEGP Scheme (KVIC / MSME)</a>
+                <span class="sitemap-desc">Up to ₹50 Lakhs capital loan with 15%–35% margin money subsidy.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-target="mudra">Pradhan Mantri MUDRA Yojana</a>
+                <span class="sitemap-desc">Shishu (₹50k), Kishore (₹5L), Tarun (₹20L) collateral-free loans.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-target="standup">Stand-Up India Scheme (DFS / SIDBI)</a>
+                <span class="sitemap-desc">₹10 Lakhs to ₹1 Crore credit for SC/ST and Women greenfield units.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-target="svanidhi">PM SVANidhi Micro-Credit</a>
+                <span class="sitemap-desc">Urban street vendor working capital with 7% interest subvention.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-target="vishwakarma">PM Vishwakarma Artisan Yojana</a>
+                <span class="sitemap-desc">₹15,000 toolkit e-voucher + 5% subsidized loans for 18 artisan trades.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-target="cgtmse">CGTMSE Credit Guarantee Scheme</a>
+                <span class="sitemap-desc">Collateral-free credit coverage up to ₹5 Crore for MSMEs.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="sitemap-pillar-card">
+            <div class="sitemap-pillar-header">
+              <span>🗺️ Pillar 2: 28 States & UTs Ecosystem</span>
+            </div>
+            <ul class="sitemap-list">
+              <li>
+                <a href="#pane-states" class="sitemap-nav-link" data-tab="pane-states" data-state="Maharashtra">Maharashtra Industrial Ecosystem</a>
+                <span class="sitemap-desc">Maitri Single Window, CMEGP 15%-35% subsidy, auto & textile clusters.</span>
+              </li>
+              <li>
+                <a href="#pane-states" class="sitemap-nav-link" data-tab="pane-states" data-state="Uttar Pradesh">Uttar Pradesh & ODOP Belt</a>
+                <span class="sitemap-desc">Nivesh Mitra portal, MMYSY ₹25L loans, 75 district ODOP crafts.</span>
+              </li>
+              <li>
+                <a href="#pane-states" class="sitemap-nav-link" data-tab="pane-states" data-state="Tamil Nadu">Tamil Nadu Manufacturing Hub</a>
+                <span class="sitemap-desc">NEEDS 25% capital subsidy up to ₹75 Lakhs for first-generation youth.</span>
+              </li>
+              <li>
+                <a href="#pane-states" class="sitemap-nav-link" data-tab="pane-states" data-state="Gujarat">Gujarat Industrial Policy</a>
+                <span class="sitemap-desc">IFP Single Window, VBS interest subvention, diamond & chemical belts.</span>
+              </li>
+              <li>
+                <a href="#pane-states" class="sitemap-nav-link" data-tab="pane-states" data-state="Bihar">Bihar Udyami & Food Hub</a>
+                <span class="sitemap-desc">Mukhyamantri Udyami Yojana (₹10L assistance with 50% grant), makhana belt.</span>
+              </li>
+              <li>
+                <a href="#pane-states" class="sitemap-nav-link" data-tab="pane-states" data-state="All">Explore All 28 States & UTs</a>
+                <span class="sitemap-desc">Browse regional clusters, DIC offices, and state-specific portals.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="sitemap-pillar-card">
+            <div class="sitemap-pillar-header">
+              <span>🎯 Pillar 3: Sector & Affirmative Groups</span>
+            </div>
+            <ul class="sitemap-list">
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-filter="Women">Women Entrepreneurs (महिला उद्यमी)</a>
+                <span class="sitemap-desc">Higher 30%-35% subsidy grants, Stand-Up India priority matching.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-filter="SC">SC / ST Welfare Initiatives</a>
+                <span class="sitemap-desc">Dedicated Stand-Up India window, special category margin rates.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-filter="Handicraft/Handloom">Handlooms, Weaving & Artisans</a>
+                <span class="sitemap-desc">ODOP branding, PM Vishwakarma toolkit, Bharat Tex support.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-filter="Food Processing">Food & Agro-Processing</a>
+                <span class="sitemap-desc">PMFME 35% subsidy, cold chain incentives, agro-cluster grants.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-filter="Manufacturing">Manufacturing & Engineering</a>
+                <span class="sitemap-desc">ZED certification subsidy, capital loans up to ₹50L under PMEGP.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-filter="Trading">Micro-Retailers & Vendors</a>
+                <span class="sitemap-desc">PM SVANidhi collateral-free credit, Mudra Shishu ₹50k loan.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="sitemap-pillar-card">
+            <div class="sitemap-pillar-header">
+              <span>⚡ Pillar 4: Digital Tools & AI Innovation</span>
+            </div>
+            <ul class="sitemap-list">
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-scroll="sim-title">Smart Subsidy & EMI Simulator</a>
+                <span class="sitemap-desc">Interactive dynamic slider calculating grants, margin, and monthly EMI.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-scroll="voice-section">Vernacular Multilingual Voice AI</a>
+                <span class="sitemap-desc">Web Speech API voice extraction supporting 12 official Indian languages.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-scroll="voice-section">One-Click Sector Presets</a>
+                <span class="sitemap-desc">Instant pre-population of typical loan, sector, and demographic profiles.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-scroll="results-card">Deterministic Gazette Match Engine</a>
+                <span class="sitemap-desc">100-point transparent rule scoring based on central & state notifications.</span>
+              </li>
+              <li>
+                <a href="#pane-finder" class="sitemap-nav-link" data-tab="pane-finder" data-scroll="results-card">Audio TTS (बोलकर सुनें)</a>
+                <span class="sitemap-desc">Speech synthesis for accessible vernacular audio playback.</span>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="sitemap-modal-link" data-modal="npi-qr-modal">Mobile Continuity QR Code</a>
+                <span class="sitemap-desc">Seamlessly continue scheme discovery on mobile devices and UMANG.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 5 -->
+          <div class="sitemap-pillar-card">
+            <div class="sitemap-pillar-header">
+              <span>🌐 Pillar 5: Statutory Government Portals</span>
+            </div>
+            <ul class="sitemap-list">
+              <li>
+                <a href="https://www.india.gov.in" target="_blank" rel="noopener">National Portal of India (india.gov.in) ↗</a>
+                <span class="sitemap-desc">Apex single-window access to information and government services.</span>
+              </li>
+              <li>
+                <a href="https://www.msme.gov.in" target="_blank" rel="noopener">Ministry of MSME (msme.gov.in) ↗</a>
+                <span class="sitemap-desc">Official policy announcements, gazette rules, and notifications.</span>
+              </li>
+              <li>
+                <a href="https://udyamregistration.gov.in" target="_blank" rel="noopener">Udyam Registration Portal ↗</a>
+                <span class="sitemap-desc">Official zero-cost registration for Micro, Small and Medium Enterprises.</span>
+              </li>
+              <li>
+                <a href="https://www.jansamarth.in" target="_blank" rel="noopener">JanSamarth National Portal ↗</a>
+                <span class="sitemap-desc">Unified digital lending platform linking 13 credit-linked subsidies.</span>
+              </li>
+              <li>
+                <a href="https://www.myscheme.gov.in" target="_blank" rel="noopener">myScheme Portal (myscheme.gov.in) ↗</a>
+                <span class="sitemap-desc">National platform for citizen welfare scheme discovery.</span>
+              </li>
+              <li>
+                <a href="https://www.mygov.in" target="_blank" rel="noopener">MyGov Citizen Engagement (mygov.in) ↗</a>
+                <span class="sitemap-desc">Participatory governance platform of the Government of India.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 6 -->
+          <div class="sitemap-pillar-card">
+            <div class="sitemap-pillar-header">
+              <span>🛡️ Pillar 6: Governance, Help & Policies</span>
+            </div>
+            <ul class="sitemap-list">
+              <li>
+                <a href="javascript:void(0)" class="sitemap-modal-link" data-modal="modal-about">About Udhyami Yojna</a>
+                <span class="sitemap-desc">Vision, DPI architecture, and National Portal integration overview.</span>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="sitemap-modal-link" data-modal="modal-policies">Website & Privacy Policies</a>
+                <span class="sitemap-desc">Copyright, Hyperlinking, Privacy, and Content Contribution policies.</span>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="sitemap-modal-link" data-modal="modal-a11y">Accessibility Statement</a>
+                <span class="sitemap-desc">GIGW 3.0, WCAG 2.1 AA compliance, screen readers, contrast toggles.</span>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="sitemap-modal-link" data-modal="modal-faq">Help & Frequently Asked Questions</a>
+                <span class="sitemap-desc">Answers on application procedures, documents, collateral, and DICs.</span>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="sitemap-modal-link" data-modal="modal-terms">Terms & Conditions</a>
+                <span class="sitemap-desc">Official disclaimer, citizen usage terms, and legal governing law.</span>
+              </li>
+              <li>
+                <a href="tel:18001806763">National Toll-Free Helplines</a>
+                <span class="sitemap-desc">MSME: 1800-180-6763 | Stand-Up India: 1800-180-1111 | PMEGP: 1800-3000-0034</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Portal Footer (National Portal of India - india.gov.in Standard) -->
+  <footer class="portal-footer" role="contentinfo">
+    <!-- Institutional Partner Strip -->
+    <div class="footer-partner-strip">
+      <div class="partner-badge-group">
+        <span class="partner-badge">🇮🇳 Digital India (डिजिटल भारत)</span>
+        <span class="partner-badge">🏛️ NIC National Portal of India</span>
+        <span class="partner-badge">💼 Ministry of MSME</span>
+        <span class="partner-badge">🛡️ Make in India</span>
+      </div>
+      <div style="font-size: 12px; color: #94A3B8;">
+        <span>Standard: GIGW 3.0 & WCAG 2.1 AA Compliant</span>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>राष्ट्रीय उद्यम एवं योजना पोर्टल</h3>
+        <p style="font-size: 13px; line-height: 1.6; color: #CBD5E0;">
+          Udhyami Yojna is a digital public infrastructure platform aligned with the National Portal of India (india.gov.in). 
+          It empowers rural artisans, women, SC/ST, and marginalized entrepreneurs with transparent, deterministic scheme matching and vernacular advisory.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Government Portals (सरकारी पोर्टल)</h3>
+        <ul>
+          <li><a href="https://www.india.gov.in" target="_blank" rel="noopener">National Portal of India (india.gov.in) ↗</a></li>
+          <li><a href="https://www.msme.gov.in" target="_blank" rel="noopener">Ministry of MSME (msme.gov.in) ↗</a></li>
+          <li><a href="https://udyamregistration.gov.in" target="_blank" rel="noopener">Udyam Registration Portal ↗</a></li>
+          <li><a href="https://www.jansamarth.in" target="_blank" rel="noopener">JanSamarth National Credit Portal ↗</a></li>
+          <li><a href="https://www.mygov.in" target="_blank" rel="noopener">MyGov Citizen Engagement (mygov.in) ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>National Helplines (राष्ट्रीय हेल्पलाइन)</h3>
+        <ul>
+          <li><strong>MSME National Toll-Free:</strong> 1800-180-6763</li>
+          <li><strong>Stand-Up India Portal:</strong> 1800-180-1111</li>
+          <li><strong>KVIC PMEGP Helpdesk:</strong> 1800-3000-0034</li>
+          <li><strong>National Single Window (NSWS):</strong> 1800-102-5841</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-links">
+        <a href="javascript:void(0)" class="footer-modal-trigger" data-modal="modal-about">About the Portal</a>
+        <span>|</span>
+        <a href="javascript:void(0)" class="footer-modal-trigger" data-modal="modal-policies">Website Policies</a>
+        <span>|</span>
+        <a href="javascript:void(0)" class="footer-modal-trigger" data-modal="modal-a11y">Accessibility Statement</a>
+        <span>|</span>
+        <a href="javascript:void(0)" class="footer-modal-trigger" data-modal="modal-faq">Help & FAQ</a>
+        <span>|</span>
+        <a href="javascript:void(0)" class="footer-modal-trigger" data-modal="modal-terms">Terms & Conditions</a>
+        <span>|</span>
+        <a href="javascript:void(0)" id="footer-link-sitemap">विस्तृत साइटमैप (Sitemap)</a>
+      </div>
+      <p>
+        This portal is maintained in accordance with the Guidelines for Indian Government Websites (GIGW 3.0) 
+        and National Portal of India standards. Content owned, operated and hosted by the Ministry of MSME, Government of India.
+      </p>
+      <p style="margin-top: 4px; color: #64748B;">
+        © 2026 Udhyami Yojna | National Portal Architecture | Smart India Hackathon (SIH 2026)
+      </p>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       ACCESSIBLE GOVERNMENT MODALS (GIGW 3.0 & WCAG 2.1 AA COMPLIANT)
+       ==================================================================== -->
+
+  <!-- Modal 1: About the Portal -->
+  <div id="modal-about" class="gov-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+    <div class="gov-modal-dialog">
+      <div class="gov-modal-header">
+        <h3 id="about-modal-title" class="gov-modal-title">
+          <span>🏛️</span>
+          <span>About Udhyami Yojna | राष्ट्रीय उद्यम एवं योजना पोर्टल</span>
+        </h3>
+        <button type="button" class="gov-modal-close-icon" data-close="modal-about" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="gov-modal-body">
+        <h4>Digital Public Infrastructure for Enterprise Inclusion</h4>
+        <p>
+          Udhyami Yojna is an innovative, citizen-centric Digital Public Infrastructure (DPI) platform aligned with the 
+          <strong>National Portal of India (india.gov.in)</strong> and the <strong>Ministry of Micro, Small and Medium Enterprises (MSME)</strong>, Government of India.
+        </p>
+        <h4>Core Architectural Pillars</h4>
+        <ul>
+          <li><strong>Vernacular Voice Ingestion:</strong> Multilingual speech recognition across 12 official Indian languages (Hindi, Marathi, Tamil, Bengali, Telugu, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, English) breaking literacy barriers.</li>
+          <li><strong>Deterministic Gazette Rule Engine:</strong> 100-point transparent algorithmic scoring based strictly on official Central and State Government Gazette criteria, ensuring complete equity and zero bias.</li>
+          <li><strong>End-to-End Linkage:</strong> Seamless integration with Udyam Registration, JanSamarth National Credit Portal, and District Industries Centres (DICs).</li>
+          <li><strong>Affirmative Financial Inclusion:</strong> Specialized subsidies and grant calculation for Women, Scheduled Castes, Scheduled Tribes, Divyangjan, and traditional rural artisans.</li>
+        </ul>
+        <h4>Institutional Compliance</h4>
+        <p>
+          Maintained strictly following the Guidelines for Indian Government Websites (GIGW 3.0), ISO 27001 cybersecurity frameworks, and WCAG 2.1 Level AA conformance.
+        </p>
+      </div>
+      <div class="gov-modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-close="modal-about">Close / बंद करें</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Website Policies -->
+  <div id="modal-policies" class="gov-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="policies-modal-title">
+    <div class="gov-modal-dialog">
+      <div class="gov-modal-header">
+        <h3 id="policies-modal-title" class="gov-modal-title">
+          <span>📜</span>
+          <span>Website Policies | पोर्टल नीतियां (GIGW 3.0)</span>
+        </h3>
+        <button type="button" class="gov-modal-close-icon" data-close="modal-policies" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="gov-modal-body">
+        <h4>Hyperlinking Policy</h4>
+        <p>
+          Prior permission is not required to link directly to the information hosted on this portal. However, pages must load into a full newly opened browser window and not within framing structures. All outbound external links are provided for citizen convenience with explicit notification.
+        </p>
+        <h4>Copyright Policy</h4>
+        <p>
+          Material featured on this portal may be reproduced free of charge in any format or media without special permission, provided the material is reproduced accurately and not used in a derogatory or misleading manner. The source must be prominently acknowledged.
+        </p>
+        <h4>Privacy Policy</h4>
+        <p>
+          This portal does not capture any personal identifying information (PII) without voluntary citizen consent. Spoken voice transcripts and demographic variables entered for scheme discovery are evaluated ephemerally in-session and are never sold or shared with commercial entities.
+        </p>
+        <h4>Content Contribution & Validation Policy</h4>
+        <p>
+          All scheme rules, subsidy percentages, and nodal bank criteria are synchronized with official gazetted notifications published by the Ministry of MSME, Ministry of Finance, and state industry departments.
+        </p>
+      </div>
+      <div class="gov-modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-close="modal-policies">Close / बंद करें</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Accessibility Statement -->
+  <div id="modal-a11y" class="gov-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="a11y-modal-title">
+    <div class="gov-modal-dialog">
+      <div class="gov-modal-header">
+        <h3 id="a11y-modal-title" class="gov-modal-title">
+          <span>♿</span>
+          <span>Accessibility Statement | सुगम्यता विवरण</span>
+        </h3>
+        <button type="button" class="gov-modal-close-icon" data-close="modal-a11y" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="gov-modal-body">
+        <h4>Universal Access Commitment (GIGW 3.0 & WCAG 2.1 AA)</h4>
+        <p>
+          Udhyami Yojna is committed to ensuring that the portal is accessible to all citizens, regardless of device, technology, or physical ability. It is built to achieve Level AA conformance of the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.1.
+        </p>
+        <h4>Accessible Features Implemented</h4>
+        <ul>
+          <li><strong>Screen Reader Friendly:</strong> Semantic HTML5 landmarks, WAI-ARIA live regions, and descriptive alt attributes for all national emblems and banners.</li>
+          <li><strong>Keyboard Navigation:</strong> Complete navigation operable via keyboard (Tab, Shift+Tab, Enter, Escape).</li>
+          <li><strong>Font Resizing:</strong> Instant text size enlargement (A-, A, A+) accessible from the top utility bar without distortion.</li>
+          <li><strong>High Contrast Mode:</strong> High contrast color theme option adhering to a minimum 4.5:1 contrast ratio.</li>
+          <li><strong>Audio TTS Support:</strong> Vernacular text-to-speech audio for scheme summaries and guidance.</li>
+        </ul>
+      </div>
+      <div class="gov-modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-close="modal-a11y">Close / बंद करें</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Help & FAQ -->
+  <div id="modal-faq" class="gov-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="faq-modal-title">
+    <div class="gov-modal-dialog">
+      <div class="gov-modal-header">
+        <h3 id="faq-modal-title" class="gov-modal-title">
+          <span>❓</span>
+          <span>Help & Frequently Asked Questions (FAQ) | प्रश्नोत्तरी</span>
+        </h3>
+        <button type="button" class="gov-modal-close-icon" data-close="modal-faq" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="gov-modal-body">
+        <h4>1. How does Udhyami Yojna calculate eligible schemes?</h4>
+        <p>
+          The portal uses an objective, gazette-verified rule engine. Your age, investment requirements, enterprise sector, geographic location (Urban/Rural), and social category are compared against official subsidy parameters to calculate a match score and actionable roadmap.
+        </p>
+        <h4>2. Do I need collateral security to apply for loans?</h4>
+        <p>
+          Under major initiatives like <strong>PMEGP, Pradhan Mantri MUDRA Yojana, and CGTMSE</strong>, loans up to ₹5 Crore are collateral-free, backed by government credit guarantee trusts.
+        </p>
+        <h4>3. Who qualifies for the higher 35% subsidy grant?</h4>
+        <p>
+          Under PMEGP and respective state industrial schemes, enterprises set up in <strong>Rural areas</strong> by <strong>Women, SC, ST, OBC, Divyangjan, or Ex-Servicemen</strong> qualify for up to 35% margin money capital grants.
+        </p>
+        <h4>4. Where do I apply after discovering my schemes?</h4>
+        <p>
+          Each scheme card provides an official direct link to the statutory application portal (such as JanSamarth.in, KVIC PMEGP Portal, or Udyam Registration).
+        </p>
+      </div>
+      <div class="gov-modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-close="modal-faq">Close / बंद करें</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Terms & Conditions -->
+  <div id="modal-terms" class="gov-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title">
+    <div class="gov-modal-dialog">
+      <div class="gov-modal-header">
+        <h3 id="terms-modal-title" class="gov-modal-title">
+          <span>⚖️</span>
+          <span>Terms & Conditions | नियम एवं शर्तें</span>
+        </h3>
+        <button type="button" class="gov-modal-close-icon" data-close="modal-terms" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="gov-modal-body">
+        <h4>Usage Terms & Citizen Charter</h4>
+        <p>
+          Udhyami Yojna is a public information and advisory service provided free of charge to all citizens of India.
+        </p>
+        <h4>Disclaimer of Guarantee</h4>
+        <p>
+          While every effort is made to maintain accurate, up-to-date gazette norms, the final loan sanction, subsidy release, and margin disbursement are subject to statutory verification and credit approval by participating commercial banks, KVIC, and District Industries Centres (DICs).
+        </p>
+        <h4>Governing Law</h4>
+        <p>
+          These terms and conditions shall be governed by and construed in accordance with Indian Law. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the Courts of India.
+        </p>
+      </div>
+      <div class="gov-modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-close="modal-terms">Close / बंद करें</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Continuity QR Code Modal (with Authentic Central Ashoka Emblem) -->
+  <div id="npi-qr-modal" class="gov-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+    <div class="gov-modal-dialog" style="max-width: 420px; text-align: center;">
+      <div class="gov-modal-header" style="justify-content: center; position: relative;">
+        <h3 id="qr-modal-title" class="gov-modal-title" style="color: #0B3C5D; font-size: 18px;">
+          <span>📱</span>
+          <span>Scan QR for Mobile & UMANG Access</span>
+        </h3>
+        <button type="button" class="gov-modal-close-icon" id="btn-close-qr" data-close="npi-qr-modal" aria-label="Close QR Modal" style="position: absolute; right: 14px; top: 12px;">&times;</button>
+      </div>
+      <div class="gov-modal-body" style="padding: 20px;">
+        <p style="font-size: 13px; color: #475569; margin-bottom: 16px;">
+          Scan this official QR code with any smartphone camera or Google Lens to instantly access Udhyami Yojna on mobile devices.
+        </p>
+        <div style="background: #FFFFFF; padding: 12px; border-radius: 8px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 1px solid #CBD5E1;">
+          <img src="/images/logos/portal_qr_code.svg" alt="Official National Portal QR Code" class="qr-code-img" style="width: 220px; height: 220px; display: block; margin: 0 auto;">
+        </div>
+        <div style="font-size: 12px; font-weight: 700; color: #0B3C5D; margin-top: 14px;">
+          National Portal of India • Instant Digital Access
+        </div>
+        <div style="font-size: 11px; color: #64748B; margin-top: 4px;">
+          Government of India • Ministry of MSME • DPI Platform
+        </div>
+      </div>
+      <div class="gov-modal-footer" style="justify-content: center;">
+        <button type="button" class="btn btn-secondary btn-sm" data-close="npi-qr-modal">
+          Close / बंद करें
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Entry Script: ES Modules Only -->
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

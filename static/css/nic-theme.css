@@ -1,0 +1,1089 @@
+/* ==========================================================================
+   NIC India Govt Portal Theme - Udhyami Yojna (उद्यमी योजना)
+   Conforms to India.gov.in and National Portal Accessibility Guidelines
+   High-contrast, Large Touch Targets, Accessible Semantic Styling
+   ========================================================================== */
+
+:root {
+  /* Official Tricolor Palette */
+  --saffron-primary: #D84315;     /* Deep Indian Saffron */
+  --saffron-light: #FF9933;       /* Bright Saffron Accent */
+  --saffron-bg: #FFF8E1;          /* Warm soft saffron tint */
+  --chakra-navy: #0B3C5D;         /* Ashoka Chakra Navy */
+  --navy-dark: #07253B;           /* High contrast dark blue */
+  --navy-light: #1D6FA5;          /* Link and focus accent */
+  --india-green: #1B5E20;         /* Deep Forest Green */
+  --green-light: #2E7D32;         /* Success badge green */
+  --green-bg: #E8F5E9;           /* Success background */
+
+  /* Neutral & Functional Grays */
+  --bg-page: #F4F6F9;             /* Govt portal neutral grey-blue */
+  --bg-card: #FFFFFF;
+  --bg-surface: #F8FAFC;
+  --text-main: #1A202C;           /* 14:1 contrast ratio against white */
+  --text-muted: #4A5568;          /* 7:1 contrast ratio */
+  --text-on-dark: #FFFFFF;
+  --border-light: #CBD5E0;
+  --border-focus: #0B3C5D;
+  --danger: #C53030;
+  --danger-bg: #FFF5F5;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Devanagari", sans-serif;
+  --line-height-base: 1.6;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+
+  /* Touch Target minimums */
+  --touch-target-min: 48px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: var(--line-height-base);
+  color: var(--text-main);
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 3px solid var(--saffron-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Skip to Content for Screen Readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: var(--chakra-navy);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 10000;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ==========================================================================
+   Govt Top Ribbon & Tricolor Header
+   ========================================================================== */
+.tricolor-stripe {
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    #FF9933 0%, #FF9933 33.3%,
+    #FFFFFF 33.3%, #FFFFFF 66.6%,
+    #138808 66.6%, #138808 100%
+  );
+  width: 100%;
+}
+
+.govt-top-bar {
+  background-color: #ECEFF1;
+  border-bottom: 1px solid #CFD8DC;
+  padding: 4px 16px;
+  font-size: 13px;
+  color: #37474F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.govt-top-bar .gov-identity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.govt-top-bar .gov-tools {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.helpline-badge {
+  background-color: #FFE082;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Portal Main Header - National Portal (india.gov.in) White & Navy Theme */
+.portal-header {
+  background-color: #FFFFFF;
+  color: var(--text-main);
+  padding: 12px 24px;
+  border-bottom: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.header-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.emblem-placeholder {
+  width: 58px;
+  height: 64px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.emblem-placeholder svg {
+  width: 54px;
+  height: 60px;
+}
+
+.brand-hierarchy {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-goi {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #556987;
+  text-transform: uppercase;
+}
+
+.brand-ministry {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2D3748;
+}
+
+.brand-text h1 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin: 2px 0 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.brand-text .hindi-title {
+  color: #B43403;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.brand-text .english-title {
+  color: #0B3C5D;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  color: #4A5568;
+  margin-top: 1px;
+}
+
+/* Universal Header Search Bar (as seen on india.gov.in) */
+.header-search-wrapper {
+  display: flex;
+  align-items: center;
+  background: #F8FAFC;
+  border: 1.5px solid #CBD5E0;
+  border-radius: 8px;
+  padding: 3px 4px 3px 12px;
+  min-width: 320px;
+  max-width: 480px;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.header-search-wrapper:focus-within {
+  border-color: #0B3C5D;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(11, 60, 93, 0.15);
+}
+
+.header-search-input {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: #1A202C;
+  width: 100%;
+  outline: none;
+  padding: 6px 8px;
+}
+
+.header-category-select {
+  border: none;
+  border-left: 1px solid #CBD5E0;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4A5568;
+  padding: 6px 8px;
+  outline: none;
+  cursor: pointer;
+  max-width: 130px;
+}
+
+.header-search-btn {
+  background-color: #0B3C5D;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.2s;
+}
+
+.header-search-btn:hover {
+  background-color: #D84315;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Navigation Bar - india.gov.in Official Navy Header
+   ========================================================================== */
+.portal-nav {
+  background-color: #132B4F;
+  border-bottom: 3px solid #D84315;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2px;
+  padding: 0 12px;
+  overflow-x: auto;
+}
+
+.nav-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 18px;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid transparent;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #F1F5F9;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: var(--touch-target-min);
+  transition: all 0.2s ease;
+  letter-spacing: 0.2px;
+}
+
+.nav-tab:hover {
+  color: #FFD54F;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav-tab.active {
+  color: #FFFFFF;
+  background-color: #0A1C33;
+  border-bottom-color: #FF9933;
+}
+
+.nav-tab .tab-hindi {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.nav-tab .tab-badge {
+  background-color: #FF9933;
+  color: #07253B;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 1px 7px;
+  border-radius: 12px;
+}
+
+/* Breadcrumbs (India.gov.in style) */
+.portal-breadcrumbs {
+  background-color: #F1F5F9;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 6px 16px;
+  font-size: 12px;
+  color: #64748B;
+}
+
+.breadcrumbs-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs-container a {
+  color: #0B3C5D;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumbs-container a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  color: #94A3B8;
+}
+
+.breadcrumb-current {
+  color: #1A202C;
+  font-weight: 700;
+}
+
+/* Quick Topics Pill Bar (as seen on india.gov.in) */
+.npi-topics-bar {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.npi-topics-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.npi-topics-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #0B3C5D;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.npi-topic-pill {
+  background: #F8FAFC;
+  border: 1px solid #CBD5E0;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.npi-topic-pill:hover, .npi-topic-pill.active {
+  background-color: #FFF8E1;
+  border-color: #D84315;
+  color: #D84315;
+}
+  border: 1px solid var(--saffron-light);
+}
+
+/* ==========================================================================
+   Main Content Layout
+   ========================================================================== */
+.main-wrapper {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+  flex: 1;
+  width: 100%;
+}
+
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+
+/* Section Containers */
+.gov-card {
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.gov-card-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gov-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--chakra-navy);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gov-card-title .step-number {
+  background-color: var(--saffron-primary);
+  color: #FFFFFF;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.gov-card-desc {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--touch-target-min);
+  padding: 10px 22px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--saffron-primary);
+  color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(216, 67, 21, 0.3);
+}
+.btn-primary:hover {
+  background-color: #BF360C;
+}
+
+.btn-navy {
+  background-color: var(--chakra-navy);
+  color: #FFFFFF;
+}
+.btn-navy:hover {
+  background-color: var(--navy-dark);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: var(--chakra-navy);
+  border-color: var(--border-light);
+}
+.btn-secondary:hover {
+  background-color: #EDF2F7;
+  border-color: var(--chakra-navy);
+}
+
+.btn-success {
+  background-color: var(--india-green);
+  color: #FFFFFF;
+}
+.btn-success:hover {
+  background-color: #144919;
+}
+
+.btn-sm {
+  min-height: 36px;
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+/* Form Controls */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.form-hint {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  min-height: var(--touch-target-min);
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text-main);
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--border-light);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--chakra-navy);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(11, 60, 93, 0.2);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* Footer */
+.portal-footer {
+  background-color: #0B1D38;
+  color: #CBD5E1;
+  padding: 36px 16px 20px;
+  margin-top: auto;
+  font-size: 13px;
+  border-top: 4px solid #D84315;
+}
+
+.footer-partner-strip {
+  max-width: 1240px;
+  margin: 0 auto 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.partner-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.partner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+
+.footer-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col h3 {
+  color: #FFB74D;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #CBD5E0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col a:hover {
+  color: #FFD54F;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1240px;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 12px;
+  color: #94A3B8;
+  line-height: 1.6;
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-bottom-links a {
+  color: #E2E8F0;
+  text-decoration: none;
+}
+.footer-bottom-links a:hover {
+  color: #FF9933;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   GIGW 3.0 Standard Accessibility Toolbar & Controls
+   ========================================================================== */
+.gigw-utility-bar {
+  background-color: #0d1520;
+  color: #CBD5E0;
+  font-size: 12px;
+  padding: 5px 16px;
+  border-bottom: 1px solid #1E293B;
+  position: relative;
+  z-index: 100;
+}
+
+.gigw-utility-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.gigw-left, .gigw-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gigw-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #94A3B8;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.a11y-controls-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.a11y-btn {
+  background: #1E293B;
+  color: #F1F5F9;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 26px;
+  transition: all 0.2s ease;
+}
+
+.a11y-btn:hover, .a11y-btn:focus-visible {
+  background-color: var(--saffron-primary);
+  color: #FFFFFF;
+  border-color: var(--saffron-primary);
+}
+
+.a11y-btn.active {
+  background-color: var(--chakra-navy);
+  color: #FFFFFF;
+  border-color: #60A5FA;
+}
+
+/* Font Scaling Classes */
+body.font-sm {
+  font-size: 14px;
+}
+body.font-sm .form-input,
+body.font-sm .form-select,
+body.font-sm .btn {
+  font-size: 13px;
+}
+
+body.font-md {
+  font-size: 16px;
+}
+
+body.font-lg {
+  font-size: 18px;
+}
+body.font-lg .form-input,
+body.font-lg .form-select,
+body.font-lg .btn {
+  font-size: 17px;
+}
+
+/* ==========================================================================
+   High-Contrast Monochrome Accessibility Theme (WCAG AAA)
+   ========================================================================== */
+body.high-contrast {
+  --bg-page: #000000 !important;
+  --bg-card: #0A0A0A !important;
+  --bg-surface: #141414 !important;
+  --text-main: #FFFFFF !important;
+  --text-muted: #E2E8F0 !important;
+  --border-light: #FFFF00 !important;
+  --border-focus: #FFFF00 !important;
+  --chakra-navy: #FFFF00 !important;
+  --navy-dark: #000000 !important;
+  --saffron-primary: #FFFF00 !important;
+  --saffron-light: #FFFF00 !important;
+  --saffron-bg: #1A1A00 !important;
+  --india-green: #00FF66 !important;
+  --green-bg: #002200 !important;
+  color: #FFFFFF !important;
+  background-color: #000000 !important;
+}
+
+body.high-contrast .gov-card,
+body.high-contrast .voice-recorder-card,
+body.high-contrast .transcript-preview-box,
+body.high-contrast .scheme-card,
+body.high-contrast .form-input,
+body.high-contrast .form-select,
+body.high-contrast .form-textarea,
+body.high-contrast .state-details-card {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #FFFF00 !important;
+}
+
+body.high-contrast .portal-header,
+body.high-contrast .portal-nav,
+body.high-contrast .portal-footer,
+body.high-contrast .govt-top-bar,
+body.high-contrast .gigw-utility-bar {
+  background-color: #000000 !important;
+  border-color: #FFFF00 !important;
+}
+
+body.high-contrast .nav-tab {
+  color: #FFFFFF !important;
+  border-color: #FFFF00 !important;
+}
+
+body.high-contrast .nav-tab.active {
+  background-color: #FFFF00 !important;
+  color: #000000 !important;
+  font-weight: 900 !important;
+}
+
+body.high-contrast .btn-primary {
+  background-color: #FFFF00 !important;
+  color: #000000 !important;
+  border: 2px solid #FFFFFF !important;
+  font-weight: 900 !important;
+}
+
+body.high-contrast .btn-secondary {
+  background-color: #000000 !important;
+  color: #FFFF00 !important;
+  border: 2px solid #FFFF00 !important;
+}
+
+body.high-contrast a {
+  color: #00FFFF !important;
+  text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   AUTHENTIC INDIA.GOV.IN BRAND ASSETS & NEWS TICKER
+   ========================================================================== */
+.flag-brand-icon {
+  width: 22px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.npi-brand-logo {
+  height: 48px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.nic-brand-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.myscheme-brand-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.portal-brand-logos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.emblem-img {
+  width: 52px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.make-in-india-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.digital-india-logo {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+.msme-header-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.udyam-header-logo {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* National Media & Gazette News Ticker (india.gov.in pattern) */
+.npi-news-ticker-bar {
+  background: #0B1D38;
+  color: #FFFFFF;
+  border-top: 1px solid #1E3A8A;
+  border-bottom: 2px solid #FF9933;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.ticker-label-badge {
+  background: linear-gradient(135deg, #D84315 0%, #BF360C 100%);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ticker-media-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.ticker-media-logo {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.ticker-marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+  position: relative;
+}
+
+.ticker-marquee-content {
+  display: inline-block;
+  animation: npiMarquee 35s linear infinite;
+  padding-left: 100%;
+}
+
+.ticker-marquee-wrapper:hover .ticker-marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes npiMarquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 32px;
+  color: #E2E8F0;
+}
+
+.ticker-item strong {
+  color: #FFD54F;
+}
+
+.ticker-item a {
+  color: #93C5FD;
+  text-decoration: none;
+}
+
+.ticker-item a:hover {
+  text-decoration: underline;
+}
+
+/* Explore Bharat Frame Styling with authentic vectors */
+.explore-bharat-frame {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+  padding: 24px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.explore-vector-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.explore-vector-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.explore-content-inner {
+  position: relative;
+  z-index: 2;
+}
+
+

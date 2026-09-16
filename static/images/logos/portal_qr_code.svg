@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <rect x="0" y="0" width="320" height="320" fill="#FFFFFF" rx="16"/>
+  <rect x="12" y="12" width="296" height="296" fill="#FFFFFF" stroke="#0B3C5D" stroke-width="2" rx="12"/>
+  
+  <!-- Outer Finder Pattern Top-Left -->
+  <rect x="30" y="30" width="60" height="60" fill="#0B3C5D" rx="4"/>
+  <rect x="38" y="38" width="44" height="44" fill="#FFFFFF" rx="2"/>
+  <rect x="46" y="46" width="28" height="28" fill="#0B3C5D" rx="2"/>
+
+  <!-- Outer Finder Pattern Top-Right -->
+  <rect x="230" y="30" width="60" height="60" fill="#0B3C5D" rx="4"/>
+  <rect x="238" y="38" width="44" height="44" fill="#FFFFFF" rx="2"/>
+  <rect x="246" y="46" width="28" height="28" fill="#0B3C5D" rx="2"/>
+
+  <!-- Outer Finder Pattern Bottom-Left -->
+  <rect x="30" y="230" width="60" height="60" fill="#0B3C5D" rx="4"/>
+  <rect x="38" y="238" width="44" height="44" fill="#FFFFFF" rx="2"/>
+  <rect x="46" y="246" width="28" height="28" fill="#0B3C5D" rx="2"/>
+
+  <!-- Timing Patterns -->
+  <g fill="#0B3C5D">
+    <rect x="100" y="40" width="10" height="10"/>
+    <rect x="120" y="40" width="10" height="10"/>
+    <rect x="140" y="40" width="10" height="10"/>
+    <rect x="160" y="40" width="10" height="10"/>
+    <rect x="180" y="40" width="10" height="10"/>
+    <rect x="200" y="40" width="10" height="10"/>
+
+    <rect x="40" y="100" width="10" height="10"/>
+    <rect x="40" y="120" width="10" height="10"/>
+    <rect x="40" y="140" width="10" height="10"/>
+    <rect x="40" y="160" width="10" height="10"/>
+    <rect x="40" y="180" width="10" height="10"/>
+    <rect x="40" y="200" width="10" height="10"/>
+  </g>
+
+  <!-- Dummy Data Pattern Modules -->
+  <g fill="#1E293B">
+    <rect x="100" y="60" width="10" height="10"/>
+    <rect x="110" y="70" width="10" height="10"/>
+    <rect x="130" y="60" width="10" height="10"/>
+    <rect x="150" y="70" width="10" height="10"/>
+    <rect x="170" y="60" width="10" height="10"/>
+    <rect x="190" y="70" width="10" height="10"/>
+    <rect x="210" y="60" width="10" height="10"/>
+
+    <rect x="60" y="100" width="10" height="10"/>
+    <rect x="70" y="110" width="10" height="10"/>
+    <rect x="90" y="100" width="10" height="10"/>
+    <rect x="80" y="130" width="10" height="10"/>
+    <rect x="70" y="150" width="10" height="10"/>
+    <rect x="90" y="170" width="10" height="10"/>
+    <rect x="60" y="190" width="10" height="10"/>
+    <rect x="80" y="210" width="10" height="10"/>
+
+    <rect x="230" y="100" width="10" height="10"/>
+    <rect x="250" y="110" width="10" height="10"/>
+    <rect x="240" y="130" width="10" height="10"/>
+    <rect x="260" y="140" width="10" height="10"/>
+    <rect x="230" y="160" width="10" height="10"/>
+    <rect x="250" y="180" width="10" height="10"/>
+    <rect x="270" y="200" width="10" height="10"/>
+    <rect x="240" y="220" width="10" height="10"/>
+
+    <rect x="100" y="230" width="10" height="10"/>
+    <rect x="120" y="240" width="10" height="10"/>
+    <rect x="140" y="230" width="10" height="10"/>
+    <rect x="160" y="250" width="10" height="10"/>
+    <rect x="180" y="240" width="10" height="10"/>
+    <rect x="200" y="230" width="10" height="10"/>
+    <rect x="220" y="250" width="10" height="10"/>
+    <rect x="240" y="240" width="10" height="10"/>
+    <rect x="260" y="250" width="10" height="10"/>
+
+    <rect x="110" y="110" width="10" height="10"/>
+    <rect x="200" y="110" width="10" height="10"/>
+    <rect x="110" y="200" width="10" height="10"/>
+    <rect x="200" y="200" width="10" height="10"/>
+  </g>
+
+  <!-- Center Badge with State Emblem of India -->
+  <circle cx="160" cy="160" r="38" fill="#FFFFFF" stroke="#D84315" stroke-width="3"/>
+  <g transform="translate(142, 136) scale(0.36)">
+    <!-- Ashoka Lion Emblem vector inside QR center -->
+    <path d="M50 5 C44 5 38 12 38 20 C38 28 42 34 44 42 C41 43 38 46 38 50 C38 56 43 62 50 62 C57 62 62 56 62 50 C62 46 59 43 56 42 C58 34 62 28 62 20 C62 12 56 5 50 5 Z" fill="#0B3C5D"/>
+    <rect x="22" y="66" width="56" height="8" rx="2" fill="#0B3C5D"/>
+    <circle cx="50" cy="70" r="3" fill="#FFFFFF"/>
+    <path d="M30 75 C35 84 65 84 70 75 L67 85 C60 90 40 90 33 85 Z" fill="#0B3C5D"/>
+    <rect x="25" y="87" width="50" height="4" rx="1" fill="#0B3C5D"/>
+  </g>
+  <text x="160" y="188" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="7" fill="#B43403" text-anchor="middle">UDHYAM GOV</text>
+
+  <!-- Bottom Scan Text -->
+  <text x="160" y="306" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="11" fill="#0B3C5D" text-anchor="middle" letter-spacing="1">SCAN TO OPEN ON MOBILE</text>
+</svg>

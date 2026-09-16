@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="#D84315"/>
+    <!-- Traditional Hammer & Chisel / Toolkit icon -->
+    <path d="M 16 20 L 26 14 L 32 22 L 24 28 Z" fill="#FFFFFF"/>
+    <path d="M 23 26 L 44 47 L 40 51 L 19 30 Z" fill="#FFFFFF"/>
+    <circle cx="42" cy="20" r="6" fill="#FFD54F"/>
+  </g>
+  <text x="80" y="30" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="18" fill="#B43403">PM VISHWAKARMA</text>
+  <text x="80" y="48" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="12" fill="#0B3C5D">पीएम विश्वकर्मा योजना</text>
+  <text x="80" y="64" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="10" fill="#15803D">Artisans & Craftsmen Welfare</text>
+</svg>
