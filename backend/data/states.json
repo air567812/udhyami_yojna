@@ -1,0 +1,323 @@
+[
+  {
+    "state_code": "MH",
+    "name": "Maharashtra",
+    "name_hi": "महाराष्ट्र",
+    "capital": "Mumbai",
+    "region": "West",
+    "key_sectors": ["Automotive", "Engineering", "Textiles & Apparel", "Information Technology", "Food Processing", "Pharma"],
+    "single_window_portal": "https://mahakamgar.maharashtra.gov.in/",
+    "dic_portal": "https://di.maharashtra.gov.in/",
+    "helpline": "1800-120-8040",
+    "nodal_agency": "Maharashtra Industrial Development Corporation (MIDC) & Directorate of Industries",
+    "regional_initiatives": "Flagship CMEGP program supporting up to ₹50 Lakh loans with 35% subsidy for rural micro-enterprises. Special industrial parks for women entrepreneurs in Chhatrapati Sambhajinagar and Pune. Stamp duty exemptions and power tariff subsidies in Vidarbha and Marathwada regions.",
+    "district_clusters": [
+      {"district": "Pune", "specialty": "Auto components & Electronics"},
+      {"district": "Solapur", "specialty": "Chaddar, Terry Towels & Handlooms"},
+      {"district": "Kolhapur", "specialty": "Foundry, Jaggery & Leather footwear"},
+      {"district": "Nashik", "specialty": "Wine, Food processing & Engineering"},
+      {"district": "Nagpur", "specialty": "Orange processing & Logistics"}
+    ]
+  },
+  {
+    "state_code": "UP",
+    "name": "Uttar Pradesh",
+    "name_hi": "उत्तर प्रदेश",
+    "capital": "Lucknow",
+    "region": "North",
+    "key_sectors": ["One District One Product (ODOP)", "Handicrafts", "Leather Goods", "Agro & Food Processing", "IT/Electronics"],
+    "single_window_portal": "https://niveshmitra.up.nic.in/",
+    "dic_portal": "https://diupmsme.upsdc.gov.in/",
+    "helpline": "1800-180-0888",
+    "nodal_agency": "Directorate of Industries and Enterprise Promotion (DIUP)",
+    "regional_initiatives": "Pioneering One District One Product (ODOP) initiative with specialized marketing, toolkit, and margin money assistance. Mukhyamantri Yuva Swarojgar Yojana (MMYSY) granting up to 25% margin money for manufacturing (max ₹6.25L) and service (max ₹2.5L).",
+    "district_clusters": [
+      {"district": "Varanasi", "specialty": "Banarasi Silk & Wooden Toys"},
+      {"district": "Moradabad", "specialty": "Brassware & Metal crafts"},
+      {"district": "Agra", "specialty": "Leather Footwear & Stone Carving"},
+      {"district": "Bhadohi", "specialty": "Hand-knotted Carpets & Rugs"},
+      {"district": "Kannauj", "specialty": "Natural Attar & Essential Oils"},
+      {"district": "Aligarh", "specialty": "Locks, Hardware & Metal Components"}
+    ]
+  },
+  {
+    "state_code": "TN",
+    "name": "Tamil Nadu",
+    "name_hi": "तमिलनाडु",
+    "capital": "Chennai",
+    "region": "South",
+    "key_sectors": ["Automobiles & EV", "Textiles & Garments", "Leather Products", "Precision Engineering", "IT & SaaS"],
+    "single_window_portal": "https://easybusiness.tn.gov.in/",
+    "dic_portal": "https://www.msmeonline.tn.gov.in/",
+    "helpline": "044-22501550",
+    "nodal_agency": "Tamil Nadu Small Industries Development Corporation (TANSIDCO)",
+    "regional_initiatives": "NEEDS scheme offering 25% capital subsidy up to ₹75 Lakh and 3% interest subvention for first-generation graduates. UYEGP (Unemployed Youth Employment Generation Programme) providing up to ₹15 Lakhs loan with 25% subsidy.",
+    "district_clusters": [
+      {"district": "Tiruppur", "specialty": "Cotton Knitwear & Garment Exports"},
+      {"district": "Coimbatore", "specialty": "Pumps, Wet Grinders & Precision Foundry"},
+      {"district": "Salem", "specialty": "Sago processing & Steel products"},
+      {"district": "Madurai", "specialty": "Sungudi Sarees & Agro processing"},
+      {"district": "Sivakasi", "specialty": "Printing, Packaging & Matches"}
+    ]
+  },
+  {
+    "state_code": "GJ",
+    "name": "Gujarat",
+    "name_hi": "गुजरात",
+    "capital": "Gandhinagar",
+    "region": "West",
+    "key_sectors": ["Chemicals & Petrochemicals", "Textiles & Diamond", "Ceramics", "Pharmaceuticals", "Renewable Energy"],
+    "single_window_portal": "https://ifp.gujarat.gov.in/",
+    "dic_portal": "https://cottage.gujarat.gov.in/",
+    "helpline": "079-23252659",
+    "nodal_agency": "Gujarat Industrial Development Corporation (GIDC) & Commissionerate of Cottage Industries",
+    "regional_initiatives": "Vajpayee Bankable Scheme (VBS) supporting rural and cottage artisans with up to 40% subsidy. iNDEXTb facilitation centre for MSEs with capital and interest subsidies for women entrepreneurs.",
+    "district_clusters": [
+      {"district": "Surat", "specialty": "Diamond Polishing & Synthetic Textiles"},
+      {"district": "Morbi", "specialty": "Ceramic Tiles & Sanitaryware"},
+      {"district": "Rajkot", "specialty": "Diesel Engines, Auto Parts & CNC Tools"},
+      {"district": "Ahmedabad", "specialty": "Cotton Ginning & Pharmaceutical Formulations"},
+      {"district": "Kutch", "specialty": "Ajrakh Hand-block Printing & Embroidery"}
+    ]
+  },
+  {
+    "state_code": "KA",
+    "name": "Karnataka",
+    "name_hi": "कर्नाटक",
+    "capital": "Bengaluru",
+    "region": "South",
+    "key_sectors": ["Information Technology", "Aerospace & Defence", "Biotechnology", "Silk & Textiles", "Heavy Machinery"],
+    "single_window_portal": "https://ebizkarnataka.gov.in/",
+    "dic_portal": "https://cmegp.kar.nic.in/",
+    "helpline": "080-22386796",
+    "nodal_agency": "Karnataka Industrial Areas Development Board (KIADB) & KSSIDC",
+    "regional_initiatives": "Karnataka CMEGP offering 35% capital subsidy (up to ₹5L) for rural and special category micro-enterprises. Dedicated Women Entrepreneurship Parks in Harohalli and Hubballi.",
+    "district_clusters": [
+      {"district": "Bengaluru Rural", "specialty": "Electronic Systems & Hardware"},
+      {"district": "Mysuru", "specialty": "Silk Sarees, Sandalwood & Food Processing"},
+      {"district": "Channapatna (Ramanagara)", "specialty": "Lacquered Wooden Toys"},
+      {"district": "Belagavi", "specialty": "Hydraulics, Castings & Powerlooms"},
+      {"district": "Dharwad-Hubballi", "specialty": "Valves & Precision Engineering"}
+    ]
+  },
+  {
+    "state_code": "BR",
+    "name": "Bihar",
+    "name_hi": "बिहार",
+    "capital": "Patna",
+    "region": "East",
+    "key_sectors": ["Agro & Food Processing", "Textiles & Leather", "Ethanol Production", "Handicrafts & Madhubani Art"],
+    "single_window_portal": "https://swcs.bihar.gov.in/",
+    "dic_portal": "https://udyami.bihar.gov.in/",
+    "helpline": "1800-345-6214",
+    "nodal_agency": "Bihar Industrial Area Development Authority (BIADA) & Department of Industries",
+    "regional_initiatives": "Mukhyamantri Udyami Yojana: ₹10 Lakh assistance (₹5 Lakh grant + ₹5 Lakh 0% interest loan) for SC, ST, EBC, and Women entrepreneurs. Leather and Textile Policy 2022 providing power, wage, and capital subsidies.",
+    "district_clusters": [
+      {"district": "Muzaffarpur", "specialty": "Shahi Litchi processing & Readymade garments"},
+      {"district": "Bhagalpur", "specialty": "Tussar Silk Weaving & Handlooms"},
+      {"district": "Madhubani", "specialty": "Mithila Painting & Makhana (Fox Nuts) processing"},
+      {"district": "Gaya", "specialty": "Stone carving & Agarbatti manufacturing"},
+      {"district": "Vaishali", "specialty": "Banana fiber products & Agro-logistics"}
+    ]
+  },
+  {
+    "state_code": "RJ",
+    "name": "Rajasthan",
+    "name_hi": "राजस्थान",
+    "capital": "Jaipur",
+    "region": "North-West",
+    "key_sectors": ["Mineral & Stones", "Handicrafts & Blue Pottery", "Gems & Jewellery", "Textile & Tie-Dye", "Tourism & Hospitality"],
+    "single_window_portal": "https://swcs.rajasthan.gov.in/",
+    "dic_portal": "https://industries.rajasthan.gov.in/",
+    "helpline": "0141-2227636",
+    "nodal_agency": "Rajasthan State Industrial Development and Investment Corporation (RIICO)",
+    "regional_initiatives": "MLUPY (Mukhyamantri Laghu Udyog Protsahan Yojana) with up to 8% interest subsidy for 5 years on loans up to ₹10 Crore. MSME Act 2019 granting 3-year exemption from state inspections and clearances.",
+    "district_clusters": [
+      {"district": "Jaipur", "specialty": "Blue Pottery, Block Printing & Gemstones"},
+      {"district": "Jodhpur", "specialty": "Wooden Handicrafts, Furniture & Guar Gum"},
+      {"district": "Bhilwara", "specialty": "Synthetic Suiting & Denim Fabrics"},
+      {"district": "Makrana (Nagaur)", "specialty": "White Marble Mining & Craftsmanship"},
+      {"district": "Kota", "specialty": "Doria Sarees & Stone Processing"}
+    ]
+  },
+  {
+    "state_code": "WB",
+    "name": "West Bengal",
+    "name_hi": "पश्चिम बंगाल",
+    "capital": "Kolkata",
+    "region": "East",
+    "key_sectors": ["Leather & Footwear", "Jute & Textiles", "Tea Processing", "Metal fabrication", "Terracotta & Crafts"],
+    "single_window_portal": "https://silpasathi.wb.gov.in/",
+    "dic_portal": "https://karmasathi.wb.gov.in/",
+    "helpline": "033-22822002",
+    "nodal_agency": "West Bengal Small Industries Development Corporation (WBSIDC)",
+    "regional_initiatives": "Karma Sathi Prakalpa supporting 3 lakh youth with subsidized bank loans up to ₹2 Lakh and 15% state subsidy. Banglashree scheme offering capital investment, term loan, and electricity duty subsidies.",
+    "district_clusters": [
+      {"district": "Kolkata/Bantala", "specialty": "Leather Goods & Export Footwear"},
+      {"district": "Bankura", "specialty": "Terracotta & Bell Metal Crafts"},
+      {"district": "Nadia (Santipur)", "specialty": "Handloom Tant & Jamdani Sarees"},
+      {"district": "Howrah", "specialty": "Foundry, Castings & Light Engineering"},
+      {"district": "Darjeeling", "specialty": "Organic Tea Cultivation & Packaging"}
+    ]
+  },
+  {
+    "state_code": "TG",
+    "name": "Telangana",
+    "name_hi": "तेलंगाना",
+    "capital": "Hyderabad",
+    "region": "South",
+    "key_sectors": ["Information Technology", "Pharmaceuticals & Life Sciences", "Precision Engineering", "Handlooms", "Food Processing"],
+    "single_window_portal": "https://ipass.telangana.gov.in/",
+    "dic_portal": "https://industries.telangana.gov.in/",
+    "helpline": "040-23441666",
+    "nodal_agency": "Telangana State Industrial Infrastructure Corporation (TSIIC)",
+    "regional_initiatives": "T-PRIDE policy for SC/ST and Differently-Abled entrepreneurs with 35-45% investment subsidy up to ₹75 Lakh. WE-Hub: India's first state-led incubator dedicated exclusively to women entrepreneurs.",
+    "district_clusters": [
+      {"district": "Hyderabad", "specialty": "Biotech, Software & Medical Devices"},
+      {"district": "Pochampally (Yadadri)", "specialty": "Ikat Silk & Cotton Sarees"},
+      {"district": "Warangal", "specialty": "Durries, Cotton Weaving & Agro-processing"},
+      {"district": "Nirmal", "specialty": "Traditional Wooden Toys & Paintings"},
+      {"district": "Sircilla", "specialty": "Textiles & Modern Powerlooms"}
+    ]
+  },
+  {
+    "state_code": "AS",
+    "name": "Assam",
+    "name_hi": "असम",
+    "capital": "Dispur",
+    "region": "North-East",
+    "key_sectors": ["Tea & Agro Processing", "Muga & Eri Silk", "Bamboo & Cane", "Petrochemicals", "Tourism & Handicrafts"],
+    "single_window_portal": "https://eodb.assam.gov.in/",
+    "dic_portal": "https://cmaaa.assam.gov.in/",
+    "helpline": "0361-2237256",
+    "nodal_agency": "Assam Industrial Development Corporation (AIDC)",
+    "regional_initiatives": "Chief Minister's Atmanirbhar Asom Abhijan (CMAAA) granting ₹2 Lakh to ₹5 Lakh (50% grant + 50% 0% loan). Special incentives under North East Industrial Development Scheme (NEIDS) with 30% capital investment subsidy.",
+    "district_clusters": [
+      {"district": "Sualkuchi (Kamrup)", "specialty": "Golden Muga Silk & Pat Silk Weaving"},
+      {"district": "Barpeta", "specialty": "Bell Metal & Brass Utensils"},
+      {"district": "Jorhat", "specialty": "Specialty Tea & Sericulture"},
+      {"district": "Nalbari", "specialty": "Bamboo Craft & Cane Furniture"},
+      {"district": "Silchar (Cachar)", "specialty": "Pineapple Processing & Betel Nut Products"}
+    ]
+  },
+  {
+    "state_code": "OD",
+    "name": "Odisha",
+    "name_hi": "ओडिशा",
+    "capital": "Bhubaneswar",
+    "region": "East",
+    "key_sectors": ["Metals & Minerals", "Handlooms & Textiles", "Marine Food Processing", "IT/Electronics", "Handicrafts"],
+    "single_window_portal": "https://investodisha.gov.in/",
+    "dic_portal": "https://handloom.odisha.gov.in/",
+    "helpline": "1800-345-7111",
+    "nodal_agency": "Industrial Promotion and Investment Corporation of Odisha (IPICOL) & OSIC",
+    "regional_initiatives": "Silpi Samruddhi Yojana with 30-50% capital subsidy for artisans. Special MSME Development Policy providing 25-30% capital investment subsidy and 5% interest subsidy for women, SC, ST and Divyangjan entrepreneurs.",
+    "district_clusters": [
+      {"district": "Cuttack", "specialty": "Silver Filigree (Tarakasi) & Horn Work"},
+      {"district": "Sambalpur", "specialty": "Sambalpuri Ikat Handloom Sarees"},
+      {"district": "Raghurajpur (Puri)", "specialty": "Pattachitra Paintings & Palm Leaf Engravings"},
+      {"district": "Bhadrak", "specialty": "Applique Work (Pipili) & Marine Processing"},
+      {"district": "Mayurbhanj", "specialty": "Sabai Grass Crafts & Dokra casting"}
+    ]
+  },
+  {
+    "state_code": "KL",
+    "name": "Kerala",
+    "name_hi": "केरल",
+    "capital": "Thiruvananthapuram",
+    "region": "South",
+    "key_sectors": ["Spices & Agro-processing", "Ayurveda & Wellness", "Marine Exports", "IT & Electronics", "Coir & Handlooms"],
+    "single_window_portal": "https://kswift.kerala.gov.in/",
+    "dic_portal": "https://industry.kerala.gov.in/",
+    "helpline": "1800-425-3435",
+    "nodal_agency": "Kerala State Industrial Development Corporation (KSIDC)",
+    "regional_initiatives": "Mission 1 Lakh Enterprises campaign. Nanma self-employment loan scheme with interest subvention. WE-Mission special soft loans for women entrepreneurs up to ₹50 Lakh at low interest rates.",
+    "district_clusters": [
+      {"district": "Alappuzha", "specialty": "Coir Products, Mats & Geotextiles"},
+      {"district": "Wayanad & Idukki", "specialty": "Cardamom, Pepper & Spices Processing"},
+      {"district": "Kochi (Ernakulam)", "specialty": "Marine Exports & Seafood Processing"},
+      {"district": "Kannur", "specialty": "Handloom Fabrics & Home Furnishings"},
+      {"district": "Thrissur", "specialty": "Gold Jewellery & Ayurvedic Medicines"}
+    ]
+  },
+  {
+    "state_code": "MP",
+    "name": "Madhya Pradesh",
+    "name_hi": "मध्य प्रदेश",
+    "capital": "Bhopal",
+    "region": "Central",
+    "key_sectors": ["Textiles & Chanderi/Maheshwari", "Auto & Engineering", "Food Processing & Soybean", "Pharma", "Handicrafts"],
+    "single_window_portal": "https://invest.mp.gov.in/",
+    "dic_portal": "https://msme.mponline.gov.in/",
+    "helpline": "0755-2576811",
+    "nodal_agency": "MP Industrial Development Corporation (MPIDC)",
+    "regional_initiatives": "Mukhyamantri Udyam Kranti Yojana offering loans up to ₹50 Lakh with 3% interest subsidy and 100% bank guarantee for 7 years. Special cluster support for traditional Chanderi and Maheshwari weavers.",
+    "district_clusters": [
+      {"district": "Indore", "specialty": "Pharma, Auto Ancillaries & Confectionery"},
+      {"district": "Ashoknagar (Chanderi)", "specialty": "Chanderi Silk & Zari Weaving"},
+      {"district": "Khargone (Maheshwar)", "specialty": "Maheshwari Handloom Sarees"},
+      {"district": "Ujjain", "specialty": "Batik Print & Garments"},
+      {"district": "Dewas", "specialty": "Soybean Oil & Bio-fertilizers"}
+    ]
+  },
+  {
+    "state_code": "PB",
+    "name": "Punjab",
+    "name_hi": "पंजाब",
+    "capital": "Chandigarh",
+    "region": "North",
+    "key_sectors": ["Bicycles & Auto Parts", "Hosiery & Knitwear", "Hand Tools", "Agro & Food Processing", "Sports Goods"],
+    "single_window_portal": "https://pbindustries.gov.in/",
+    "dic_portal": "https://pbindustries.gov.in/",
+    "helpline": "0172-2776001",
+    "nodal_agency": "Punjab Small Industries & Export Corporation (PSIEC)",
+    "regional_initiatives": "Industrial and Business Development Policy with capital subsidy for MSEs, electricity duty exemption for 7 years, and special anchor unit incentives. Dedicated sports goods cluster support in Jalandhar.",
+    "district_clusters": [
+      {"district": "Ludhiana", "specialty": "Bicycles, Sewing Machines & Woollen Hosiery"},
+      {"district": "Jalandhar", "specialty": "Sports Goods, Hand Tools & Leather Tanning"},
+      {"district": "Amritsar", "specialty": "Pashmina Shawls, Pickles & Papads"},
+      {"district": "Batala (Gurdaspur)", "specialty": "Foundry & Agricultural Implements"},
+      {"district": "Mohali", "specialty": "IT Software & Bio-technology"}
+    ]
+  },
+  {
+    "state_code": "AP",
+    "name": "Andhra Pradesh",
+    "name_hi": "आंध्र प्रदेश",
+    "capital": "Amaravati",
+    "region": "South",
+    "key_sectors": ["Aquaculture & Marine Processing", "Automotive", "Textiles & Mangalagiri Silk", "Electronics", "Pharma"],
+    "single_window_portal": "https://singlewindow.ap.gov.in/",
+    "dic_portal": "https://apindustries.gov.in/",
+    "helpline": "1800-425-4440",
+    "nodal_agency": "Andhra Pradesh Industrial Infrastructure Corporation (APIIC)",
+    "regional_initiatives": "YSR Cheyutha and Jaganna Thodu supporting micro self-employment and street vendors with zero-interest loans. Special YSR Navodayam scheme for restructuring stressed MSME accounts.",
+    "district_clusters": [
+      {"district": "Visakhapatnam", "specialty": "Marine Exports & Heavy Engineering"},
+      {"district": "Krishna & Guntur", "specialty": "Chilli Processing & Mangalagiri Handlooms"},
+      {"district": "Anantapur", "specialty": "Auto Assembly & Sericulture"},
+      {"district": "Srikakulam", "specialty": "Cashew Processing & Khadi Weaving"},
+      {"district": "Kadapa", "specialty": "Limestone Processing & Cement Products"}
+    ]
+  },
+  {
+    "state_code": "DL",
+    "name": "Delhi (NCT)",
+    "name_hi": "दिल्ली",
+    "capital": "New Delhi",
+    "region": "North",
+    "key_sectors": ["IT & Tech Services", "Readymade Garments", "Electronics & Assembly", "Logistics & Warehousing", "Media & Design"],
+    "single_window_portal": "https://delhi.gov.in/",
+    "dic_portal": "https://industries.delhi.gov.in/",
+    "helpline": "1800-11-2555",
+    "nodal_agency": "Delhi State Industrial and Infrastructure Development Corporation (DSIIDC)",
+    "regional_initiatives": "Delhi Startup Policy offering seed capital, mentorship, and cloud credit subsidies. Delhi Bazar e-commerce portal connecting local traders and micro manufacturers to global markets.",
+    "district_clusters": [
+      {"district": "Okhla", "specialty": "Electronics, Garments & Light Engineering"},
+      {"district": "Mayapuri", "specialty": "Metal recycling & Auto components"},
+      {"district": "Narela & Bawana", "specialty": "Plastic products, Packaging & Footwear"},
+      {"district": "Gandhi Nagar", "specialty": "Asia's largest ready-made garment hub"},
+      {"district": "Chandni Chowk", "specialty": "Jewellery, Spices & Traditional Crafts"}
+    ]
+  }
+]
